@@ -244,4 +244,4 @@ if( get_theme_mod( "penci_left_sidebar_posts" ) ) { $sidebar_position = 'left-si
 			<?php // get_sidebar(); ?>
 		<?php endif; ?>
 
-<?php get_footer('premium'); ?>
+<?php get_footer('basic'); ?>
