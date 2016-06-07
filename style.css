@@ -11027,6 +11027,9 @@ div.ppt {
 	text-align: center;
 	margin-bottom: 10px;
 }
+.single-woofunnels_checkout p.minimum-price {
+    display: none;
+}
 @media only screen and (min-width: 961px) and (max-width: 1169px) {
 	.overlay-header-box .overlay-title {
 		font-size: 20px;
