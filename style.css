@@ -1941,7 +1941,7 @@ body .penci-slider ol.penci-control-nav li a {
 	font-family: 'Raleway', sans-serif;
 	letter-spacing: 1px;
 	cursor: pointer;
-	font-size: 14px;
+	font-size: 28px;
 	line-height: 1.3;
 	border: none;
 	font-weight: bold;
@@ -10036,7 +10036,8 @@ div.ppt {
 		min-height: 250px;
 	}
 	.penci-slider ul.slides li .pencislider-container {
-		padding: 0 65px;
+		padding: 0 65px 0 35px;
+		top:50px!important;
 	}
 	.penci-slider .pencislider-container .pencislider-content .pencislider-title {
 		font-size: 18px;
@@ -10050,7 +10051,7 @@ div.ppt {
 	}
 	.penci-slider .pencislider-container .pencislider-content .pencislider-button {
 		padding: 8px 20px;
-		font-size: 12px;
+		font-size: 28px;
 	}
 	.penci-slider .pencislider-container .pencislider-content .pencislider-button:before {
 		content: none;
@@ -10584,10 +10585,12 @@ div.ppt {
 	}
 	.penci-slider ul.slides li .pencislider-container {
 		padding: 0 20px;
+		top: 10%!important;
+    	width: 70%;
 	}
 	.penci-slider .pencislider-container .pencislider-content .pencislider-title {
-		font-size: 14px;
 		letter-spacing: 1px;
+		width: 100%;
 	}
 	.penci-slider .pencislider-container .pencislider-content .pencislider-caption {
 		font-size: 12px;
@@ -10598,7 +10601,7 @@ div.ppt {
 	}
 	.penci-slider .pencislider-container .pencislider-content .pencislider-button {
 		padding: 5px 10px;
-		font-size: 10px;
+		font-size: 22px;
 	}
 	.penci-slider .penci-direction-nav .penci-prev, .penci-slider .penci-direction-nav .penci-next {
 		display: none !important;
@@ -10957,7 +10960,6 @@ div.ppt {
 .flower-oracle-home-left {
 	width: 34%;
 	float: left;
-	padding-top: 30px;
 }
 .flower-oracle-home-right {
 	width: 62%;
@@ -10965,6 +10967,7 @@ div.ppt {
 }
 .flower-oracle-home-right .overlay-header-box {
     background: #b7c570;
+    background: rgba(183,197,112,0.90);
     padding: 20px 10px;
 }
 .flower-oracle-home-right .penci-overlay-over .overlay-header-box:after {
@@ -11019,6 +11022,10 @@ div.ppt {
 .woocommerce form.lost_reset_password .form-row input[type="submit"],
 .woocommerce form.register .form-row input[type="submit"] {
     background: #7E1743;
+}
+.mtoll-dynamic-lounge-image h2 {
+	text-align: center;
+	margin-bottom: 10px;
 }
 @media only screen and (min-width: 961px) and (max-width: 1169px) {
 	.overlay-header-box .overlay-title {
