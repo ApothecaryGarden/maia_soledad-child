@@ -61,6 +61,18 @@ function maia_hub_widgets_init() {
     'after_title'   => '</h2>',
     ) );
 }
+add_action( 'after_setup_theme', 'oak_childtheme_setup' );
+
+function oak_childtheme_setup() {
+
+    // Register navigation menu
+    register_nav_menus( array(
+        'mobile-menu'   => 'Mobile Menu',
+        'wc-menu' => 'WC Menu'
+    ) );
+
+}
+
 
 /**
  * Sensei Support
