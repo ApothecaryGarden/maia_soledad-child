@@ -7142,7 +7142,7 @@ label#captcha_code_label {
 	letter-spacing: 0;
 	font-family: 'PT Serif', serif;
 	width: 100%;
-	max-width: 400px;
+/*	max-width: 400px; */
 	display: block;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -7166,7 +7166,7 @@ label#captcha_code_label {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	background: #F5F5F5;
-	max-width: 400px;
+/*	max-width: 400px; */
 }
 .widget input[type="submit"]:hover{
 	background: #6eb48c;
@@ -11021,7 +11021,7 @@ div.ppt {
 .woocommerce form.login .form-row input[type="submit"],
 .woocommerce form.lost_reset_password .form-row input[type="submit"],
 .woocommerce form.register .form-row input[type="submit"] {
-    background: #7E1743;
+    background: #b52261;
 }
 .mtoll-dynamic-lounge-image h2 {
 	text-align: center;
