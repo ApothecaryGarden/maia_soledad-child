@@ -11030,6 +11030,11 @@ div.ppt {
 .single-woofunnels_checkout p.minimum-price {
     display: none;
 }
+.wf-single-product.wf-fp-block {
+    float: left;
+    width: 100%;
+    margin: 10px auto 60px;
+}
 @media only screen and (min-width: 961px) and (max-width: 1169px) {
 	.overlay-header-box .overlay-title {
 		font-size: 20px;
