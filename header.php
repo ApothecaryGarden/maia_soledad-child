@@ -68,7 +68,6 @@ if ( 'lounge' === get_post_type( $post->ID )
 	/**
 	 * Display main navigation
 	 */
-	global $post;
 	if ( $wcl ) {
 		wp_nav_menu( array(
 			'container'      => false,
@@ -99,7 +98,7 @@ if ( 'lounge' === get_post_type( $post->ID )
 
 <header id="header" class="header-<?php echo esc_attr( $header_layout ); ?><?php if( ( ( ! is_home() || ! is_front_page() ) && ! get_theme_mod( 'penci_featured_slider_all_page' ) ) || ( ( is_home() || is_front_page() ) && ! get_theme_mod( 'penci_featured_slider' ) ) ): ?> has-bottom-line<?php endif;?>"><!-- #header -->
 	<div class="inner-header">
-		<div class="container<?php if( $header_layout == 'header-3' ): echo ' align-left-logo'; if( get_theme_mod( 'penci_header_3_banner' ) || get_theme_mod( 'penci_header_3_adsense' ) ): echo ' has-banner'; endif; endif;?>">
+		<div class="container<?php if( !$wcl ): if( $header_layout == 'header-3' ): echo ' align-left-logo'; if( get_theme_mod( 'penci_header_3_banner' ) || get_theme_mod( 'penci_header_3_adsense' ) ): echo ' has-banner'; endif; endif; endif; ?>">
 
 			<div id="logo">
 				<?php if ( is_home() || is_front_page() ) : ?>
@@ -199,6 +198,7 @@ if ( 'lounge' === get_post_type( $post->ID )
 /**
  * Get feature slider
  */
+/*
 if( is_home() || is_front_page() || get_theme_mod( 'penci_featured_slider_all_page' ) ) {
 	if( get_theme_mod( 'penci_enable_featured_video_bg' ) && get_theme_mod( 'penci_featured_video_url' ) ) {
 			get_template_part( 'inc/featured_slider/featured_video' );
@@ -218,3 +218,14 @@ if( is_home() || is_front_page() || get_theme_mod( 'penci_featured_slider_all_pa
 		endif;
 	}
 }
+*/
+if( is_home() || is_front_page() || get_theme_mod( 'penci_featured_slider_all_page' ) ) : ?>
+<div class="home-jumbo">
+	<div class="jumbo-content">
+	<h2 class="jumbo-title"><a href="//maiatoll.com/take-the-quiz/">
+	<span>The world is noisy. </span>Your inner-voice is not.</a></h2>
+	<p class="jumbo-caption">Listen. Learn. Declare self-sovereignty.</p>
+	<div class="jumbo-button"><a class="pencislider-button" href="//maiatoll.com/take-the-quiz/">get started now! &gt;</a></div>
+	</div>
+</div>
+<?php endif;

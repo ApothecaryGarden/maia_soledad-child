@@ -9198,7 +9198,42 @@ div.ppt {
 	overflow: hidden;
 }
 
-
+.home-jumbo {
+    background: url('https://maiatoll.com/wp-content/uploads/2016/06/maia_header.jpg');
+    background-size: cover;
+    height: 560px;
+    background-repeat: no-repeat;
+    background-position: 0 -80px;
+    margin-bottom: 80px;
+    position: relative;
+    text-align: center;
+}
+.home-jumbo .jumbo-content {
+	position: absolute;
+    top: 25%;
+    left: 5%;
+}
+.home-jumbo .jumbo-title a {
+	font-size: 36px;
+    color: #8f8a86;
+}
+.home-jumbo p.jumbo-caption {
+	color: #636363;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: normal;
+    margin: 10px 0 25px;
+}
+.home-jumbo .jumbo-button a{
+	background: #b52261;
+    color: #ffffff;
+    font-family: 'Stalemate', cursive;
+    font-size: 60px;
+    padding: 8px 20px;
+}
+.home-jumbo .jumbo-button a:hover{
+	opacity: 0.9;
+}
 /*-----------------------------------------------
 	Responsive Design
 ------------------------------------------------*/
@@ -9215,6 +9250,13 @@ div.ppt {
 	}
 }
 @media only screen and (max-width: 1169px) {
+	.home-jumbo {
+		width: 120%;
+	}
+	.home-jumbo .jumbo-content {
+	    top: 25%;
+	    left: 2%;
+	}
 	.penci-video-overlay-background {
 		display: block;
 	}
@@ -9510,6 +9552,26 @@ div.ppt {
 
 /*--------- Max width 960px ---------*/
 @media only screen and (max-width: 960px) {
+	.home-jumbo {
+	    height: 500px;
+	    margin-bottom: 40px;
+	    width: 120%;
+   		background-position: 0 -40px;
+
+	}
+	.home-jumbo .jumbo-content {
+		top: 22%;
+	    max-width: 600px;
+	}
+	.home-jumbo .jumbo-title a {
+		font-size: 28px;
+	}
+	.home-jumbo p.jumbo-caption {
+	    font-size: 27px;
+	}
+	.home-jumbo .jumbo-button a{
+	    font-size: 48px;
+	}
 	#header .inner-header {
 		display: none;
 	}
@@ -9896,6 +9958,14 @@ div.ppt {
 
 /*--------- Max width 767px ---------*/
 @media only screen and (max-width: 767px) {
+	.home-jumbo {
+		text-align: left;
+		height: 420px;
+	}
+	.home-jumbo .jumbo-title a span {
+		float: left;
+		width: 100%;
+	}
 
 	.container,
 	.featured-area.style-1,
@@ -10361,6 +10431,12 @@ div.ppt {
 }
 
 @media only screen and (max-width: 480px) {
+	.home-jumbo{
+		background-position: center center;
+	}
+	.home-jumbo .jumbo-content{
+		top: 12%;
+	}
 	ul.homepage-featured-boxes li {
 		width: 100%;
 		margin-bottom: 20px;
@@ -11078,3 +11154,15 @@ div.ppt {
 	}
 }
 
+.home #header {
+	margin-bottom: 0;
+}
+::-moz-selection {
+    color: #fff;
+    background: #b7c570;
+}
+
+::selection {
+    color: #fff;
+    background: #b7c570;
+}
