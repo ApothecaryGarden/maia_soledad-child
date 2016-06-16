@@ -39,37 +39,37 @@ $header_layout = get_theme_mod( 'penci_header_layout' );
 if ( ! isset( $header_layout ) || empty( $header_layout ) ) {
 	$header_layout = 'header-1';
 }
+global $post;
+if ( 'lounge' === get_post_type( $post->ID )
+	|| 'premium' === get_post_type( $post->ID )
+	|| $post->ID == maiatoll_get_option( 'maiatoll_hub_page' ) ) {
+	$wcl = true;
+} else {
+	$wcl = false;
+}
 ?>
 <a id="close-sidebar-nav" class="<?php echo esc_attr( $header_layout ); ?>"><i class="fa fa-close"></i></a>
 
 <nav id="sidebar-nav" class="<?php echo esc_attr( $header_layout ); ?>">
 
-	<?php if ( ! get_theme_mod( 'penci_header_logo_vertical' ) ) : ?>
 		<div id="sidebar-nav-logo">
-			<?php if ( ! get_theme_mod( 'penci_mobile_nav_logo' ) ) : ?>
-				<a href="<?php echo esc_url( home_url('/') ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/mobile-logo.png" alt="<?php bloginfo( 'name' ); ?>" /></a>
+			<?php if ( $wcl ) : ?>
+				<a href="<?php echo esc_url( get_permalink( maiatoll_get_option( 'maiatoll_hub_page' ) ) ); ?>"><?php echo wp_get_attachment_image( maiatoll_get_option( 'wc_sidebar_logo_id' ), 'full' ); ?></a>
 			<?php else : ?>
 				<a href="<?php echo esc_url( home_url('/') ); ?>"><img src="<?php echo esc_url( get_theme_mod( 'penci_mobile_nav_logo' ) ); ?>" alt="<?php bloginfo( 'name' ); ?>" /></a>
 			<?php endif; ?>
 		</div>
-	<?php endif; ?>
 
-	<?php if ( ! get_theme_mod( 'penci_header_social_check' ) ) : ?>
-		<?php if ( get_theme_mod( 'penci_email_me' ) || get_theme_mod( 'penci_vk' ) || get_theme_mod( 'penci_facebook' ) || get_theme_mod( 'penci_twitter' ) || get_theme_mod( 'penci_google' ) || get_theme_mod( 'penci_instagram' ) || get_theme_mod( 'penci_pinterest' ) || get_theme_mod( 'penci_linkedin' ) || get_theme_mod( 'penci_flickr' ) || get_theme_mod( 'penci_behance' ) || get_theme_mod( 'penci_tumblr' ) || get_theme_mod( 'penci_youtube' ) || get_theme_mod( 'penci_rss' ) ) : ?>
-			<div class="header-social sidebar-nav-social">
-				<?php include( trailingslashit( get_template_directory() ). 'inc/modules/socials.php' ); ?>
-			</div>
-		<?php endif; ?>
-	<?php endif; ?>
+		<div class="header-social sidebar-nav-social">
+			<?php include( trailingslashit( get_template_directory() ). 'inc/modules/socials.php' ); ?>
+		</div>
 
 	<?php
 	/**
 	 * Display main navigation
 	 */
 	global $post;
-	if ( 'lounge' === get_post_type( $post->ID )
-		|| 'premium' === get_post_type( $post->ID )
-		|| $post->ID == maiatoll_get_option( 'maiatoll_hub_page' ) ) {
+	if ( $wcl ) {
 		wp_nav_menu( array(
 			'container'      => false,
 			'theme_location' => 'wc-menu',
@@ -108,7 +108,11 @@ if ( ! isset( $header_layout ) || empty( $header_layout ) ) {
 					</h1>
 				<?php else : ?>
 					<h2>
+					<?php if ( $wcl ) : ?>
+						<a href="<?php echo esc_url( get_permalink( maiatoll_get_option( 'maiatoll_hub_page' ) ) ); ?>"><?php echo wp_get_attachment_image( maiatoll_get_option( 'wc_left_logo_id' ), 'full' ); ?></a>
+					<?php else : ?>
 						<a href="<?php echo esc_url( home_url('/') ); ?>"><img src="<?php echo esc_url( get_theme_mod( 'penci_logo' ) ); ?>" alt="<?php bloginfo( 'name' ); ?>" /></a>
+					<?php endif; ?>
 					</h2>
 				<?php endif; ?>
 			</div>
@@ -126,7 +130,12 @@ if ( ! isset( $header_layout ) || empty( $header_layout ) ) {
 				<div class="header-banner header-style-3">
 					<?php if( get_theme_mod( 'penci_header_3_adsense' ) ):  echo get_theme_mod( 'penci_header_3_adsense' ); endif; ?>
 					<?php if( get_theme_mod( 'penci_header_3_banner' ) && ! get_theme_mod( 'penci_header_3_adsense' ) ): ?>
-						<?php echo wp_kses( $open_banner_url, penci_allow_html() ); ?><img src="<?php echo esc_url( $banner_img ); ?>" alt="Banner" /><?php echo wp_kses( $close_banner_url, penci_allow_html() ); ?>
+						<?php if ( $wcl ) : ?>
+							<a href="<?php echo esc_url( home_url('/') ); ?>"><?php echo wp_get_attachment_image( maiatoll_get_option( 'wc_right_logo_id' ), 'full' ); ?></a>
+						<?php else : ?>
+							<?php echo wp_kses( $open_banner_url, penci_allow_html() ); ?><img src="<?php echo esc_url( $banner_img ); ?>" alt="Banner" /><?php echo wp_kses( $close_banner_url, penci_allow_html() ); ?>
+						<?php endif; ?>
+
 					<?php endif; ?>
 				</div>
 			<?php endif; ?>
@@ -140,9 +149,7 @@ if ( ! isset( $header_layout ) || empty( $header_layout ) ) {
 			/**
 			 * Display main navigation
 			 */
-			if ( 'lounge' === get_post_type( $post->ID )
-				|| 'premium' === get_post_type( $post->ID )
-				|| $post->ID == maiatoll_get_option( 'maiatoll_hub_page' ) ) {
+			if ( $wcl ) {
 				wp_nav_menu( array(
 					'container'      => false,
 					'theme_location' => 'wc-menu',
@@ -167,9 +174,12 @@ if ( ! isset( $header_layout ) || empty( $header_layout ) ) {
 						<a href="<?php echo esc_url( home_url('/') ); ?>"><img src="<?php echo esc_url( get_theme_mod( 'penci_logo' ) ); ?>" alt="<?php bloginfo( 'name' ); ?>" /></a>
 					</h1>
 				<?php else : ?>
-					<h2>
+					<?php if ( $wcl ) : ?>
+						<a href="<?php echo esc_url( get_permalink( maiatoll_get_option( 'maiatoll_hub_page' ) ) ); ?>"><?php echo wp_get_attachment_image( maiatoll_get_option( 'wc_mobile_logo_id' ), array('0','58') ); ?></a>
+					<?php else : ?>
 						<a href="<?php echo esc_url( home_url('/') ); ?>"><img src="<?php echo esc_url( get_theme_mod( 'penci_logo' ) ); ?>" alt="<?php bloginfo( 'name' ); ?>" /></a>
-					</h2>
+					<?php endif; ?>
+
 				<?php endif; ?>
 			</div>
 

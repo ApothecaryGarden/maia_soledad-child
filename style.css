@@ -340,7 +340,7 @@ div.penci-topbar-menu > ul > li a {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	background: none;
-	font-size: 11px;
+	font-size: 12px;
 	text-transform: uppercase;
 	line-height: 40px;
 	font-family: 'Raleway', sans-serif;
@@ -9529,6 +9529,7 @@ div.ppt {
 	}
 	.penci-top-bar {
 		text-align: center;
+		display: none;
 	}
 
 	.penci-topbar-social {
