@@ -11157,6 +11157,10 @@ div.ppt {
 .home #header {
 	margin-bottom: 0;
 }
+ul#menu-wc-menu-1.menu {
+    text-align: center;
+    float: none;
+}
 ::-moz-selection {
     color: #fff;
     background: #b7c570;

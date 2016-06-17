@@ -94,3 +94,16 @@ add_action( 'after_setup_theme', 'oakwood_sensei_support' );
 function oakwood_sensei_support() {
     add_theme_support( 'sensei' );
 }
+
+add_filter( 'body_class', 'mtoll_witchcamp_body_class' );
+function mtoll_witchcamp_body_class( $classes ) {
+    global $post;
+    if ( 'lounge' === get_post_type( $post->ID )
+        || 'premium' === get_post_type( $post->ID )
+        || $post->ID == maiatoll_get_option( 'maiatoll_hub_page' ) ) {
+        $classes[] = 'mtoll-witchcamp';
+    }
+
+    // return the $classes array
+    return $classes;
+}
