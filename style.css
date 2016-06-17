@@ -11096,8 +11096,10 @@ div.ppt {
     padding: 0;
     border-bottom: 0;
     overflow: hidden;
-    float: left;
-    /* text-align: center; */
+    /* float: left; */
+    text-align: center;
+    width: 33.3333%;
+    display: inline-block;
 }
 .mtoll-badge143 .badgeos-achievements-list-item .badgeos-item-image {
     width: inherit;
