@@ -11128,6 +11128,9 @@ div.ppt {
     width: 100%;
     margin: 10px auto 60px;
 }
+.penci-topbar-menu .menu-item:last-child a {
+    font-weight: bold;
+}
 @media only screen and (min-width: 961px) and (max-width: 1169px) {
 	.overlay-header-box .overlay-title {
 		font-size: 20px;
