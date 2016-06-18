@@ -11144,6 +11144,9 @@ div.ppt {
 		float: left;
 		padding-top: 0;
 	}
+	.fohl-inner h1 {
+	    text-align: center;
+	}
 	.overlay-header-box .overlay-title {
 		font-size: 18px;
 	}
