@@ -9201,7 +9201,7 @@ div.ppt {
 .home-jumbo {
     background: url('https://maiatoll.com/wp-content/uploads/2016/06/maia_header.jpg');
     background-size: cover;
-    height: 560px;
+    height: 580px;
     background-repeat: no-repeat;
     background-position: 0 -80px;
     margin-bottom: 80px;
@@ -9210,12 +9210,17 @@ div.ppt {
 }
 .home-jumbo .jumbo-content {
 	position: absolute;
-    top: 25%;
+    top: 20%;
     left: 5%;
 }
 .home-jumbo .jumbo-title a {
 	font-size: 36px;
     color: #8f8a86;
+}
+.home-jumbo .jumbo-title a span,
+.home-jumbo p.jumbo-caption span {
+	float: left;
+	width: 100%;
 }
 .home-jumbo p.jumbo-caption {
 	color: #636363;
@@ -9237,7 +9242,17 @@ div.ppt {
 /*-----------------------------------------------
 	Responsive Design
 ------------------------------------------------*/
-
+@media only screen and (min-width: 1380px) {
+.home-jumbo {
+    height: 680px;
+    background-position: 0 -110px;
+}
+.home-jumbo .jumbo-content {
+	position: absolute;
+    top: 15%;
+    left: 10%;
+}
+}
 /*--------- Max width 1169px and Min width 961px ---------*/
 @media only screen and (min-width: 1170px) {
 	.footer-widget-wrapper .fb_iframe_widget,
@@ -9252,6 +9267,8 @@ div.ppt {
 @media only screen and (max-width: 1169px) {
 	.home-jumbo {
 		width: 120%;
+	    height: 560px;
+	    background-position: 0 -80px;
 	}
 	.home-jumbo .jumbo-content {
 	    top: 25%;
@@ -9553,10 +9570,10 @@ div.ppt {
 /*--------- Max width 960px ---------*/
 @media only screen and (max-width: 960px) {
 	.home-jumbo {
-	    height: 500px;
+	    height: 440px;
 	    margin-bottom: 40px;
 	    width: 120%;
-   		background-position: 0 -40px;
+   		background-position: 0 -60px;
 
 	}
 	.home-jumbo .jumbo-content {
@@ -9961,10 +9978,6 @@ div.ppt {
 	.home-jumbo {
 		text-align: left;
 		height: 420px;
-	}
-	.home-jumbo .jumbo-title a span {
-		float: left;
-		width: 100%;
 	}
 
 	.container,
@@ -11177,4 +11190,11 @@ ul#menu-wc-menu-1.menu {
 ::selection {
     color: #fff;
     background: #b7c570;
+}
+.single-woofunnels_checkout #header{
+	margin-bottom: 10px;
+	display: none;
+}
+.single-woofunnels_checkout #main {
+	padding-top: 10px;
 }

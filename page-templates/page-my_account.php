@@ -15,9 +15,6 @@ if( get_theme_mod( "penci_left_sidebar_posts" ) ) { $sidebar_position = 'left-si
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<?php get_template_part('content', 'page'); ?>
 			<?php endwhile; endif; ?>
-			<?php
-
-			?>
 		</div>
 	</div>
 	<?php if ( is_user_logged_in() ) : ?>
