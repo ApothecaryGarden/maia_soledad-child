@@ -163,6 +163,12 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: -300px;
 	padding-top: 300px;
 }
+.single-lounge .container.penci_sidebar #main {
+	width: 60.94%;
+}
+.single-lounge #sidebar {
+	width: 39.06%;
+}
 .clear-footer {
 	height: 1px;
 	margin-bottom: 29px;
@@ -9770,12 +9776,14 @@ div.ppt {
 	.portfolio-page-content .portfolio-left {
 		margin-bottom: 30px;
 	}
+	.single-lounge .container.penci_sidebar #main,
 	.container.penci_sidebar #main {
 		width: 100%;
 		margin: 0 0 60px 0;
 		padding: 0 !important;
 		float: none !important;
 	}
+	.single-lounge #sidebar,
 	#sidebar {
 		position: static !important;
 		margin-left: 0 !important;
@@ -11200,4 +11208,12 @@ ul#menu-wc-menu-1.menu {
 }
 .epoch-wrapper {
 	max-width: 100%!important;
+}
+.epoch-wrapper time, .epoch-divide {
+    display: none;
+}
+.single-lounge .epoch-comment-content,
+.single-lounge .epoch-comment-content p {
+    font-size: 18px;
+    line-height: 1.6;
 }
