@@ -11198,3 +11198,6 @@ ul#menu-wc-menu-1.menu {
 .single-woofunnels_checkout #main {
 	padding-top: 10px;
 }
+.epoch-wrapper {
+	max-width: 100%!important;
+}

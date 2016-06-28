@@ -215,25 +215,6 @@ if( get_theme_mod( "penci_left_sidebar_posts" ) ) { $sidebar_position = 'left-si
 						</div>
 					</div>
 
-					<?php if( get_theme_mod( 'penci_post_adsense_two' ) ): ?>
-						<div class="penci-google-adsense-2">
-							<?php echo get_theme_mod( 'penci_post_adsense_two' ); ?>
-						</div>
-					<?php endif; ?>
-
-					<?php if ( ! get_theme_mod( 'penci_post_author' ) ) : ?>
-						<?php get_template_part( 'inc/templates/about_author' ); ?>
-					<?php endif; ?>
-
-					<?php if ( ! get_theme_mod( 'penci_post_nav' ) ) : ?>
-						<?php get_template_part( 'inc/templates/post_pagination' ); ?>
-					<?php endif; ?>
-
-					<?php if ( ! get_theme_mod( 'penci_post_related' ) ) : ?>
-						<?php get_template_part( 'inc/templates/related_posts' ); ?>
-					<?php endif; ?>
-
-
 				</article>
 			<?php endwhile; endif; ?>
 		</div>
