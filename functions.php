@@ -107,3 +107,30 @@ function mtoll_witchcamp_body_class( $classes ) {
     // return the $classes array
     return $classes;
 }
+
+function penci_comments_template( $comment, $args, $depth ) {
+    $GLOBALS['comment'] = $comment;
+    ?>
+    <div <?php comment_class(); ?> id="comment-<?php comment_ID() ?>">
+        <div class="thecomment">
+            <div class="author-img">
+                <?php echo get_avatar( $comment, $args['avatar_size'] ); ?>
+            </div>
+            <div class="comment-text">
+                <span class="author"><?php echo get_comment_author_link(); ?></span>
+                <?php if ( $comment->comment_approved == '0' ) : ?>
+                    <em><i class="icon-info-sign"></i> <?php esc_html_e( 'Your comment awaiting approval', 'soledad' ); ?></em>
+                <?php endif; ?>
+                <div class="comment-content"><?php comment_text(); ?></div>
+                <span class="reply">
+                    <?php comment_reply_link( array_merge( $args, array(
+                        'reply_text' => esc_html__( 'Reply', 'soledad' ),
+                        'depth'      => $depth,
+                        'max_depth'  => $args['max_depth']
+                    ) ), $comment->comment_ID ); ?>
+                    <?php edit_comment_link( esc_html__( 'Edit', 'soledad' ) ); ?>
+                </span>
+            </div>
+        </div>
+<?php
+}
