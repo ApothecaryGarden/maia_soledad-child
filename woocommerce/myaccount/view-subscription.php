@@ -26,10 +26,6 @@ if ( empty( $subscription ) ) {
 
 wc_print_notices();
 
-if ( ! WC_Subscriptions::is_woocommerce_pre( '2.6' ) ) {
-	wc_get_template( 'myaccount/navigation.php' );
-	echo '<div class="woocommerce-MyAccount-content">';
-}
 ?>
 
 <table class="shop_table subscription_details">
@@ -307,10 +303,5 @@ if ( ! WC_Subscriptions::is_woocommerce_pre( '2.6' ) ) {
 </div><!-- /.col2-set -->
 
 <?php endif; ?>
-
-<?php if ( ! WC_Subscriptions::is_woocommerce_pre( '2.6' ) ) :  ?>
-</div>
-<?php endif; ?>
-
 
 <div class="clear"></div>

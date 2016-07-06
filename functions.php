@@ -134,3 +134,9 @@ function penci_comments_template( $comment, $args, $depth ) {
         </div>
 <?php
 }
+
+// Remove customizer output, add to css file, enqueue fonts
+add_action( 'after_setup_theme', 'remove_penci_customizer' );
+function remove_penci_customizer(){
+    remove_action( 'wp_head', 'pencidesign_customizer_css' );
+}

@@ -133,6 +133,10 @@ h1, h2, h3, h4, h5, h6 {
 .container {
 	width: 1170px;
 	margin: 0 auto;
+	max-width: 1170px;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 #main {
 	width: 100%;
@@ -164,10 +168,10 @@ h1, h2, h3, h4, h5, h6 {
 	padding-top: 300px;
 }
 .single-lounge .container.penci_sidebar #main {
-	width: 60.94%;
+	width: 58.94%;
 }
 .single-lounge #sidebar {
-	width: 39.06%;
+	width: 41.06%;
 }
 .clear-footer {
 	height: 1px;
@@ -1221,7 +1225,6 @@ li.penci-mega-menu > ul.sub-menu {
 	background-repeat: no-repeat;
 }
 #header .inner-header .container {
-	padding: 40px 0;
 	text-align: center;
 	position: relative;
 	overflow: hidden;
@@ -4402,7 +4405,7 @@ section.home-featured-cat {
 }
 .home-featured-cat-content.style-6 .mag-post-box.first-post .magcat-detail {
 	margin: 0;
-	padding-left: 400px;
+	padding-left: 50%;
 }
 .home-featured-cat-content.style-6 .mag-post-box.first-post.full-mag-cat .magcat-detail {
 	padding: 0 !important;
@@ -9304,7 +9307,6 @@ div.ppt {
 	}
 }
 @media only screen and (min-width: 961px) and (max-width: 1169px) {
-	.container,
 	.featured-area.style-1,
 	.featured-area.style-4,
 	.featured-area.magazine-slider,
@@ -9319,9 +9321,7 @@ div.ppt {
 		width: 320px;
 		padding-right: 30px;
 	}
-	.container.has-banner .header-banner {
-		width: 620px;
-	}
+
 	#navigation.header-4 #top-search,
 	#navigation.header-5 #top-search,
 	#navigation.header-6 #top-search {
@@ -9379,7 +9379,7 @@ div.ppt {
 	}
 	.penci_sidebar .penci-grid li.list-post .item .content-list-right,
 	.home-featured-cat-content.style-6 .mag-post-box.first-post .magcat-detail {
-		padding-left: 321px;
+		padding-left: 50%;
 	}
 	.penci-grid li:nth-of-type(3n+1) {
 		clear: none;
@@ -9597,6 +9597,9 @@ div.ppt {
 	}
 	#header .inner-header {
 		display: none;
+	}
+	.container {
+		width:94%;
 	}
 	.container.has-banner #logo {
 		text-align: center;
@@ -9860,7 +9863,6 @@ div.ppt {
 
 /*--------- Max width 960px and min width 768px ---------*/
 @media only screen and (min-width: 768px) and (max-width: 960px) {
-	.container,
 	.featured-area.style-1,
 	.featured-carousel.style-2 .item img,
 	.featured-area.style-4,
@@ -9913,7 +9915,7 @@ div.ppt {
 	}
 	.penci-grid li.list-post .item .content-list-right,
 	.home-featured-cat-content.style-6 .mag-post-box.first-post .magcat-detail {
-		padding-left: 378px;
+		padding-left: 50%;
 	}
 	.penci-grid .list-post.list-boxed-post .item .content-list-right {
 		display: inline-block;
@@ -11137,7 +11139,12 @@ div.ppt {
 .woocommerce form.register .form-row input[type="submit"] {
     background: #b52261;
 }
-.mtoll-dynamic-lounge-image h2 {
+.mtoll-dynamic-lounge-image h2,
+.mtoll-dynamic-lounge-image h3,
+.mtoll-dynamic-lounge-image h4,
+.mtoll-moon-phase h2,
+.mtoll-moon-phase h3,
+.mtoll-moon-phase h4 {
 	text-align: center;
 	margin-bottom: 10px;
 }
@@ -11172,7 +11179,10 @@ div.ppt {
 		font-size: 18px;
 	}
 	.container {
-		width: 90%;
+		width: 96%;
+	}
+	#header .container {
+		width: 100%;
 	}
 	.overlay-author span p {
 		font-size: 16px;
@@ -11216,4 +11226,233 @@ ul#menu-wc-menu-1.menu {
 .single-lounge .epoch-comment-content p {
     font-size: 18px;
     line-height: 1.6;
+}
+
+/* From Customizer */
+
+h1, h2, h3, h4, h5, h6, h2.penci-heading-video, .penci-photo-2-effect figcaption h2, .headline-title, a.penci-topbar-post-title, #navigation .menu li a, #sidebar-nav .menu li a, .penci-slider .pencislider-container .pencislider-content .pencislider-title, .penci-slider .pencislider-container .pencislider-content .pencislider-button,
+.author-quote span, .penci-more-link a.more-link, .penci-post-share-box .dt-share, .post-share a .dt-share, .author-content h5, .post-pagination h5, .post-box-title, .penci-countdown .countdown-amount, .penci-countdown .countdown-period, .penci-pagination a, .penci-pagination .disable-url, ul.footer-socials li a span,
+.widget input[type="submit"], #sidebar .widget-title, #respond h3.comment-reply-title span, .widget-social.show-text a span, .footer-widget-wrapper .widget .widget-title,
+.container.penci-breadcrumb span, .container.penci-breadcrumb span a, .error-404 .go-back-home a, .post-entry .penci-portfolio-filter ul li a, .portfolio-overlay-content .portfolio-short .portfolio-title a, .home-featured-cat-content .magcat-detail h3 a, .post-entry blockquote cite,
+.post-entry blockquote .author, .tags-share-box.hide-tags.page-share .share-title, .widget ul.side-newsfeed li .side-item .side-item-text h4 a, .thecomment .comment-text span.author, .thecomment .comment-text span.author a, .post-comments span.reply a, #respond h3, #respond label, .wpcf7 label, #respond #submit, .wpcf7 input[type="submit"], .widget_wysija input[type="submit"], .archive-box span,
+.archive-box h1, .gallery .gallery-caption, .contact-form input[type=submit], ul.penci-topbar-menu > li a, div.penci-topbar-menu > ul > li a { font-family: 'Lato', sans-serif; font-weight: normal; }
+
+body, textarea, #respond textarea, .widget input[type="text"], .widget input[type="email"], .widget input[type="date"], .widget input[type="number"], .wpcf7 textarea, .mc4wp-form input, #respond input, .wpcf7 input, #searchform input.search-input, ul.homepage-featured-boxes .penci-fea-in h4, .widget.widget_categories ul li span.category-item-count, .header-slogan .header-slogan-text, .about-widget .about-me-heading, .widget ul.side-newsfeed li .side-item .side-item-text .side-item-meta { font-family: 'Alegreya', serif;  }
+body, .widget ul li a{ font-size: 20px; }
+.widget ul li, .post-entry, p, .post-entry p { font-size: 20px; line-height: 1.8; }
+#navigation .penci-megamenu .post-mega-title a { font-size:20px; }
+a, .post-entry .penci-portfolio-filter ul li a:hover, .post-entry .penci-portfolio-filter ul li.active a, .penci-countdown .countdown-amount, .archive-box h1, .post-entry a, .container.penci-breadcrumb span a:hover, .post-entry blockquote:before, .post-entry blockquote cite, .post-entry blockquote .author, .penci-pagination a:hover, ul.penci-topbar-menu > li a:hover, div.penci-topbar-menu > ul > li a:hover { color: #7e1743; }
+.penci-home-popular-post ul.slick-dots li button:hover, .penci-home-popular-post ul.slick-dots li.slick-active button, .archive-box:after, .archive-box:before, .penci-page-header:after, .penci-page-header:before, .post-entry blockquote .author span:after, .error-image:after, .error-404 .go-back-home a:after, .penci-header-signup-form, .woocommerce .page-title:before, .woocommerce .page-title:after, .woocommerce span.onsale, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce nav.woocommerce-pagination ul li span.current, .woocommerce div.product .entry-summary div[itemprop="description"]:before, .woocommerce div.product .entry-summary div[itemprop="description"] blockquote .author span:after, .woocommerce div.product .woocommerce-tabs #tab-description blockquote .author span:after, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, #top-search.shoping-cart-icon > a > span { background-color: #7e1743; }
+.penci-pagination ul.page-numbers li span.current { color: #fff; background: #7e1743; border-color: #7e1743; }
+.footer-instagram h4.footer-instagram-title > span:before, .woocommerce nav.woocommerce-pagination ul li span.current { border-color: #7e1743; }
+.woocommerce .woocommerce-error, .woocommerce .woocommerce-info, .woocommerce .woocommerce-message { border-top-color: #7e1743; }
+.penci-slider ol.penci-control-nav li a.penci-active, .penci-slider ol.penci-control-nav li a:hover{ border-color: #7e1743; background-color: #7e1743; }
+.woocommerce .woocommerce-message:before, .woocommerce form.checkout table.shop_table .order-total .amount, .woocommerce ul.products li.product .price ins, .woocommerce ul.products li.product .price, .woocommerce div.product p.price ins, .woocommerce div.product span.price ins, .woocommerce div.product p.price, .woocommerce div.product .entry-summary div[itemprop="description"] blockquote:before, .woocommerce div.product .woocommerce-tabs #tab-description blockquote:before, .woocommerce div.product .entry-summary div[itemprop="description"] blockquote cite, .woocommerce div.product .entry-summary div[itemprop="description"] blockquote .author, .woocommerce div.product .woocommerce-tabs #tab-description blockquote cite, .woocommerce div.product .woocommerce-tabs #tab-description blockquote .author, .woocommerce div.product .product_meta > span a:hover, .woocommerce div.product .woocommerce-tabs ul.tabs li.active, .woocommerce ul.cart_list li .amount, .woocommerce ul.product_list_widget li .amount, .woocommerce table.shop_table td.product-name a:hover, .woocommerce table.shop_table td.product-price span, .woocommerce table.shop_table td.product-subtotal span, .woocommerce-cart .cart-collaterals .cart_totals table td .amount, .woocommerce .woocommerce-info:before, .woocommerce div.product span.price { color: #7e1743; }
+#navigation, #navigation.header-layout-bottom { border-color: #f3f3f2; }
+#navigation .menu li a { color:  #8f8a86; }
+#navigation .menu li a:hover, #navigation .menu li.current-menu-item > a, #navigation .menu > li.current_page_item > a, #navigation .menu li:hover > a, #navigation .menu > li.current-menu-ancestor > a, #navigation .menu > li.current-menu-item > a { color:  #7e1743; }
+#navigation ul.menu > li > a:before, #navigation .menu > ul > li > a:before { background: #7e1743; }
+#navigation .menu .sub-menu, #navigation .menu .children, #navigation ul.menu ul a, #navigation .menu ul ul a { border-color:  #c7c4c2; }
+#navigation .penci-megamenu .penci-mega-child-categories a.cat-active { border-top-color: #c7c4c2; border-bottom-color: #c7c4c2; }
+#navigation ul.menu > li.megamenu > ul.sub-menu > li:before, #navigation .penci-megamenu .penci-mega-child-categories:after { background-color: #c7c4c2; }
+#navigation .penci-megamenu, #navigation .penci-megamenu .penci-mega-child-categories a.cat-active, #navigation .penci-megamenu .penci-mega-child-categories a.cat-active:before { background-color: #8f8a86; }
+#navigation .penci-megamenu .penci-mega-child-categories { background-color: #8f8a86; }
+#navigation .penci-megamenu .penci-mega-date { color: #c7c4c2; }
+#navigation .penci-megamenu .penci-mega-thumbnail .mega-cat-name { color: #64605d; }
+#navigation .penci-megamenu .penci-mega-child-categories a.cat-active, #navigation .menu .penci-megamenu .penci-mega-child-categories a:hover, #navigation .menu .penci-megamenu .penci-mega-latest-posts .penci-mega-post a:hover { color: #f3f3f2; }
+#navigation .penci-megamenu .penci-mega-thumbnail .mega-cat-name { background: #f3f3f2; }
+#navigation .menu .sub-menu li a { color:  #ffffff; }
+#navigation .menu .sub-menu li a:hover, #navigation .menu .sub-menu li.current-menu-item > a { color:  #7e1743; }
+#navigation ul.menu ul a:before, #navigation .menu ul ul a:before { background-color: #7e1743;   -webkit-box-shadow: 5px -2px 0 #7e1743;  -moz-box-shadow: 5px -2px 0 #7e1743;  -ms-box-shadow: 5px -2px 0 #7e1743;  box-shadow: 5px -2px 0 #7e1743; }
+#top-search > a, #navigation .button-menu-mobile { color: #64605d; }
+.show-search #searchform input.search-input::-webkit-input-placeholder{ color: #64605d; }
+.show-search #searchform input.search-input:-moz-placeholder { color: #64605d; opacity: 1;}
+.show-search #searchform input.search-input::-moz-placeholder {color: #64605d; opacity: 1; }
+.show-search #searchform input.search-input:-ms-input-placeholder { color: #64605d; }
+.show-search #searchform input.search-input{ color: #64605d; }
+.show-search a.close-search {   color: #64605d; }
+.penci-home-popular-post .item-related h3 a { text-transform: none; letter-spacing: 0; }
+.penci-homepage-title.penci-magazine-title h3 a, .penci-border-arrow.penci-homepage-title .inner-arrow { text-transform: none; }
+.penci-header-signup-form { padding: px 0; }
+.header-social a:hover i {   color: #8f8a86; }
+#close-sidebar-nav { background-color: #64605d; }
+.open-sidebar-nav #close-sidebar-nav { opacity: 0.85; }
+#close-sidebar-nav i { color: #64605d; }
+.header-social.sidebar-nav-social a i, #sidebar-nav .menu li a, #sidebar-nav .menu li a .indicator { color: #8f8a86; }
+#sidebar-nav .menu li a:hover, .header-social.sidebar-nav-social a:hover i, #sidebar-nav .menu li a .indicator:hover, #sidebar-nav .menu .sub-menu li a .indicator:hover{ color: #7e1743; }
+#sidebar-nav-logo:before{ background-color: #7e1743; }
+#sidebar-nav .menu li, #sidebar-nav ul.sub-menu {   border-color: #c7c4c2; }
+.featured-overlay-color, .penci-slider ul.slides li:after { opacity: ; }
+.featured-overlay-partent, .penci-slider ul.slides li:before { opacity: ; }
+.mag2slider-overlay:after { opacity: ; }
+.mag2-thumbnail:hover .mag2slider-overlay:after { opacity: ; }
+.featured-carousel .feat-text .feat-time { background: #b7c570; }
+.featured-carousel .feat-text .feat-time:before { border-right-color: #b7c570; }
+.featured-carousel .feat-text .feat-time:after { border-left-color: #b7c570; }
+.penci-mag2-carousel .cat > a.penci-cat-name, .featured-carousel .featured-cat a, .penci-magazine-slider .mag-cat a.penci-cat-name { color: #b7c570; }
+.penci-mag2-carousel .cat > a.penci-cat-name:after, .featured-carousel .featured-cat a:after, .penci-magazine-slider .mag-cat a.penci-cat-name:after { border-color: #b7c570; }
+.penci-mag2-carousel .cat > a.penci-cat-name:hover, .featured-carousel .featured-cat a:hover, .penci-magazine-slider .mag-cat a.penci-cat-name:hover { color: #b7c570; }
+.penci-magazine-slider ul.mag-wrap li .mag-overlay { opacity: ; }
+.penci-magazine-slider ul.mag-wrap .mag-content:hover .mag-overlay { opacity: ; }
+.featured-area.loaded button.slick-prev:hover, .featured-area.loaded button.slick-next:hover, .penci-slider .penci-direction-nav .penci-prev:hover, .penci-slider .penci-direction-nav .penci-next:hover, .penci-magazine-slider .penci-direction-nav a:hover, .penci-magazine2-prev:hover, .penci-magazine2-next:hover { background: #b7c570; }
+.featured-carousel .carousel-meta span a:hover, .featured-carousel.style-7 .carousel-meta span a:hover, .featured-carousel.style-7 .carousel-meta span.feat-author a:hover { color: #b7c570; }
+.penci-slider .pencislider-container .pencislider-title{-webkit-animation-delay: 0s;-moz-animation-delay: 0s;-o-animation-delay: 0s;animation-delay: 0s;}
+.penci-slider .pencislider-container .pencislider-caption {-webkit-animation-delay: 0.2s;-moz-animation-delay: 0.2s;-o-animation-delay: 0.2s;animation-delay: 0.2s;}
+.penci-slider .pencislider-container .pencislider-content .penci-button {-webkit-animation-delay: 0.4s;-moz-animation-delay: 0.4s;-o-animation-delay: 0.4s;animation-delay: 0.4s;}
+.penci-standard-cat .cat > a.penci-cat-name { color: #7e1743; }
+.penci-standard-cat .cat:before, .penci-standard-cat .cat:after { background-color: #7e1743; }
+.penci-standard-cat .cat > a.penci-cat-name:after { border-color: #7e1743 !important; }
+.header-standard > h2 a { color: #64605d; }
+.header-standard > h2 a { color: #64605d; }
+.header-standard > h2 a:hover { color: #8f8a86; }
+.standard-content .penci-post-box-meta .penci-post-share-box a { color: #64605d; }
+.standard-content .penci-post-box-meta .penci-post-share-box a:hover, .standard-content .penci-post-box-meta .penci-post-share-box a.liked { color: #7e1743; }
+.header-standard .post-entry a:hover, .header-standard .author-post span a:hover, .standard-content a, .standard-post-entry a.more-link:hover, .penci-post-box-meta .penci-box-meta a:hover, .standard-content .post-entry blockquote:before, .post-entry blockquote cite, .post-entry blockquote .author, .standard-content-special .author-quote span, .standard-content-special .format-post-box .post-format-icon i, .standard-content-special .format-post-box .dt-special a:hover, .standard-content .penci-more-link a.more-link { color: #b7c570; }
+.standard-content-special .author-quote span:before, .standard-content-special .author-quote span:after, .standard-content .post-entry ul li:before, .post-entry blockquote .author span:after, .header-standard:after { background-color: #b7c570; }
+.penci-more-link a.more-link:before, .penci-more-link a.more-link:after { border-color: #b7c570; }
+.penci-grid li .item h2 a, .penci-masonry .item-masonry h2 a, .grid-mixed .mixed-detail h2 a, .overlay-header-box .overlay-title a { text-transform: none; }
+.penci-grid .cat a.penci-cat-name, .penci-masonry .cat a.penci-cat-name { color: #7e1743; }
+.penci-grid .cat a.penci-cat-name:after, .penci-masonry .cat a.penci-cat-name:after { border-color: #7e1743; }
+.penci-post-box-meta .penci-post-share-box a { color: #64605d; }
+.penci-post-share-box a.liked, .penci-post-share-box a:hover { color: #7e1743; }
+.penci-grid li .item h2 a, .penci-masonry .item-masonry h2 a, .grid-mixed .mixed-detail h2 a { color: #64605d; }
+.penci-grid li .item h2 a:hover, .penci-masonry .item-masonry h2 a:hover, .grid-mixed .mixed-detail h2 a:hover { color: #8f8a86; }
+.overlay-post-box-meta .overlay-share a:hover, .overlay-author a:hover, .penci-grid .standard-content-special .format-post-box .dt-special a:hover, .grid-post-box-meta span a:hover, .grid-post-box-meta span a.comment-link:hover, .penci-grid .standard-content-special .author-quote span, .penci-grid .standard-content-special .format-post-box .post-format-icon i, .grid-mixed .penci-post-box-meta .penci-box-meta a:hover { color: #c7c4c2; }
+.penci-grid .standard-content-special .author-quote span:before, .penci-grid .standard-content-special .author-quote span:after, .grid-header-box:after, .list-post .header-list-style:after { background-color: #c7c4c2; }
+.penci-grid .post-box-meta span:after, .penci-masonry .post-box-meta span:after { border-color: #c7c4c2; }
+.penci-grid li.typography-style .overlay-typography { background-color: #64605d; }
+.penci-grid li.typography-style .overlay-typography { opacity: ; }
+.penci-grid li.typography-style:hover .overlay-typography { opacity: ; }
+.overlay-header-box .cat > a.penci-cat-name:hover { color: #7e1743; }
+#sidebar .penci-border-arrow .inner-arrow { text-transform: none; }
+#sidebar .penci-border-arrow .inner-arrow { background-color: #ffffff; }
+#sidebar .penci-border-arrow .inner-arrow { border-color: #64605d; }
+#sidebar .penci-border-arrow:before { border-top-color: #64605d; }
+#sidebar .penci-border-arrow:after { border-color: #c7c4c2; }
+#sidebar .penci-border-arrow .inner-arrow { color: #8f8a86; }
+#sidebar .penci-border-arrow:after { content: none; display: none; }
+#sidebar .widget-title{ margin-left: 0; margin-right: 0; margin-top: 0; }
+#sidebar .penci-border-arrow:before{ bottom: -6px; border-width: 6px; margin-left: -6px; }
+.widget ul.side-newsfeed li .side-item .side-item-text h4 a, .widget a, .widget.widget_categories ul li, .widget.widget_archive ul li, .widget-social a i, .widget-social a span { color: #8f8a86; }
+.widget ul.side-newsfeed li .side-item .side-item-text h4 a:hover, .widget a:hover, #sidebar .widget-social a:hover span, .widget-social a:hover span, .penci-tweets-widget-content .icon-tweets, .penci-tweets-widget-content .tweet-intents a, .penci-tweets-widget-content .tweet-intents span:after { color: #7e1743; }
+.widget .tagcloud a:hover, .widget-social a:hover i, .widget input[type="submit"]:hover { color: #fff; background-color: #7e1743; border-color: #7e1743; }
+.about-widget .about-me-heading:before { border-color: #7e1743; }
+.penci-tweets-widget-content .tweet-intents-inner:before, .penci-tweets-widget-content .tweet-intents-inner:after { background-color: #7e1743; }
+.penci-slider.penci-tweets-slider ol.penci-control-nav li a.penci-active, .penci-slider.penci-tweets-slider ol.penci-control-nav li a:hover { border-color: #7e1743; background-color: #7e1743; }
+#widget-area { padding: 20px 0; }
+.footer-widget-wrapper .widget ul li { border-color: #64605d; }
+.footer-widget-wrapper .widget .widget-title { text-align: center; }
+.footer-widget-wrapper .widget .widget-title { color: #64605d; }
+.footer-widget-wrapper .widget .widget-title .inner-arrow { border-color: #f3f3f2; }
+.footer-widget-wrapper .widget .widget-title:after { border-color: #ffffff; }
+.footer-widget-wrapper .penci-tweets-widget-content .icon-tweets, .footer-widget-wrapper .penci-tweets-widget-content .tweet-intents a, .footer-widget-wrapper .penci-tweets-widget-content .tweet-intents span:after, .footer-widget-wrapper .widget ul.side-newsfeed li .side-item .side-item-text h4 a:hover, .footer-widget-wrapper .widget a:hover, .footer-widget-wrapper .widget-social a:hover span, .footer-widget-wrapper a:hover { color: #b7c550; }
+.footer-widget-wrapper .widget .tagcloud a:hover, .footer-widget-wrapper .widget-social a:hover i, .footer-widget-wrapper .mc4wp-form input[type="submit"]:hover, .footer-widget-wrapper .widget input[type="submit"]:hover { color: #fff; background-color: #b7c550; border-color: #b7c550; }
+.footer-widget-wrapper .about-widget .about-me-heading:before { border-color: #b7c550; }
+.footer-widget-wrapper .penci-tweets-widget-content .tweet-intents-inner:before, .footer-widget-wrapper .penci-tweets-widget-content .tweet-intents-inner:after { background-color: #b7c550; }
+.footer-widget-wrapper .penci-slider.penci-tweets-slider ol.penci-control-nav li a.penci-active, .footer-widget-wrapper .penci-slider.penci-tweets-slider ol.penci-control-nav li a:hover {  border-color: #b7c550;  background: #b7c550;  }
+ul.footer-socials li a i { color: #b7c570; border-color: #b7c570; }
+ul.footer-socials li a:hover i { background-color: #b7c570; border-color: #b7c570; }
+ul.footer-socials li a:hover i { color: #ffffff; }
+ul.footer-socials li a span { color: #8f8a86; }
+ul.footer-socials li a:hover span { color: #64605d; }
+.footer-socials-section { border-color: #b7c570; }
+#footer-section, .footer-instagram { background-color: #ffffff; }
+#footer-section .footer-menu li a { color: #8f8a86; }
+#footer-section .footer-menu li a:hover { color: #64605d; }
+#footer-section, #footer-copyright * { color: #64605d; }
+#footer-section .go-to-top i, #footer-section .go-to-top-parent span { color: #64605d; }
+#footer-section .go-to-top:hover span, #footer-section .go-to-top:hover i { color: #7e1743; }
+#footer-section a { color: #64605d; }
+.container-single .penci-standard-cat .cat > a.penci-cat-name { color: #7e1743; }
+.container-single .penci-standard-cat .cat:before, .container-single .penci-standard-cat .cat:after { background-color: #7e1743; }
+.container-single .penci-standard-cat .cat > a.penci-cat-name:after { border-color: #7e1743 !important; }
+.container-single .single-post-title { text-transform: none; letter-spacing: 1px; }
+.container-single .post-pagination h5 { text-transform: none; letter-spacing: 0; }
+.container-single .item-related h3 a { text-transform: none; letter-spacing: 0; }
+.container-single .header-standard .post-title { color: #64605d; }
+.container-single .post-share a, .page-share .post-share a { color: #64605d; }
+.container-single .post-share a:hover, .container-single .post-share a.liked, .page-share .post-share a:hover { color: #7e1743; }
+.post-share .count-number-like { color: #64605d; }
+.comment-content a, .container-single .post-entry a, .container-single .format-post-box .dt-special a:hover, .container-single .author-quote span, .container-single .author-post span a:hover, .post-entry blockquote:before, .post-entry blockquote cite, .post-entry blockquote .author, .post-pagination a:hover, .author-content h5 a:hover, .author-content .author-social:hover, .item-related h3 a:hover, .container-single .format-post-box .post-format-icon i, .container.penci-breadcrumb.single-breadcrumb span a:hover { color: #7e1743; }
+.container-single .standard-content-special .format-post-box, ul.slick-dots li button:hover, ul.slick-dots li.slick-active button { border-color: #7e1743; }
+ul.slick-dots li button:hover, ul.slick-dots li.slick-active button, #respond h3.comment-reply-title span:before, #respond h3.comment-reply-title span:after, .post-box-title:before, .post-box-title:after, .container-single .author-quote span:before, .container-single .author-quote span:after, .post-entry blockquote .author span:after, .post-entry blockquote .author span:before, .post-entry ul li:before, #respond #submit:hover, .wpcf7 input[type="submit"]:hover, .widget_wysija input[type="submit"]:hover { background: #7e1743; }
+.container-single .post-entry .post-tags a:hover { color: #fff; border-color: #7e1743; background-color: #7e1743; }
+ul.homepage-featured-boxes .penci-fea-in h4 span span { color: #64605d; }
+ul.homepage-featured-boxes .penci-fea-in:hover h4 span { color: #7e1743; }
+.home-pupular-posts-title { color: #64605d; }
+.penci-home-popular-post .item-related h3 a { color: #64605d; }
+.penci-home-popular-post .item-related h3 a:hover { color: #7e1743; }
+.penci-home-popular-post .item-related span.date { color: #c7c4c2; }
+.penci-border-arrow.penci-homepage-title .inner-arrow { border-color: #c7c4c2; }
+.penci-border-arrow.penci-homepage-title:before { border-top-color: #c7c4c2; }
+.penci-border-arrow.penci-homepage-title:after { border-color: #8f8a86; }
+.penci-homepage-title .inner-arrow, .penci-homepage-title.penci-magazine-title .inner-arrow a { color: #64605d; }
+.home-featured-cat-content .magcat-detail h3 a { color: #64605d; }
+.home-featured-cat-content .magcat-detail h3 a:hover { color: #7e1743; }
+.home-featured-cat-content .grid-post-box-meta span a:hover { color: #7e1743; }
+.home-featured-cat-content .first-post .magcat-detail .mag-header:after { background: #7e1743; }
+.penci-slider ol.penci-control-nav li a.penci-active, .penci-slider ol.penci-control-nav li a:hover { border-color: #7e1743; background: #7e1743; }
+.home-featured-cat-content .mag-photo .mag-overlay-photo { opacity: 0.2; }
+.home-featured-cat-content .mag-photo:hover .mag-overlay-photo { opacity: 0.3; }
+.inner-item-portfolio:hover .penci-portfolio-thumbnail a:after { opacity: ; }
+ul.homepage-featured-boxes li .penci-fea-in:before, ul.homepage-featured-boxes li .penci-fea-in:after{ content: none; }
+ul.homepage-featured-boxes .penci-fea-in h4 span span{ background: rgba(255, 255, 255, 0.8); }
+
+ul.homepage-featured-boxes .penci-fea-in h4 span span:before{ content: none; }
+
+.penci-slider .pencislider-container .pencislider-content .pencislider-title, .penci-slider .pencislider-container .pencislider-content .pencislider-button{ text-transform: none; letter-spacing: 0; }
+
+@media only screen and (min-width: 1170px) {
+.penci-slider .pencislider-container .pencislider-content .pencislider-caption{ font-size: 44px; }
+}
+
+@media only screen and (min-width: 1170px) {
+.penci-slider .pencislider-container .pencislider-content .pencislider-title{ font-size: 30px; }
+}
+
+@media only screen and (min-width: 1170px) {
+.penci-slider .pencislider-container .pencislider-content .pencislider-button{ font-size: 60px; }
+}
+
+@media only screen and (min-width: 1170px) {
+ul.homepage-featured-boxes li .penci-fea-in{ height: 415px; }
+}
+
+ul.homepage-featured-boxes li .penci-fea-in{ height: 415px; }
+
+.penci-slider .pencislider-container .pencislider-content .pencislider-button { font-family: 'Stalemate', cursive; }
+
+.featured-area.style-5{ background: none; }
+.featured-area.loaded-wait > div{ visibility: visible; }
+.penci-slider .penci-direction-nav .penci-prev, .penci-slider .penci-direction-nav .penci-next{ display: none; }
+
+.header-slogan .header-slogan-text{ font-size: 18px; }
+
+.penci-home-popular-post .item-related span.date{ display: none; }
+
+
+.penci-widget-slider-overlay{ opacity: 0; }
+
+.penci-widget-slider .penci-widget-slide-detail{ display: none; }
+
+.penci-page-header{ display: none; }
+
+#navigation ul.menu ul a, #navigation .menu ul ul a, #navigation .menu li a { font-size: 16px; }
+
+.post-entry blockquote, .post-entry blockquote p{ font-size: 20px; color: #8f8a86; }
+
+.post-entry h1, .post-entry h2, .post-entry h3, .post-entry h4, .post-entry h5, .post-entry h6 { color: #8f8a86; }
+
+.post-entry p{ color: #64605d; }
+
+.alegreya-28 {
+font-family:'Alegreya',serif;
+font-weight:300;
+font-size:28px;
+}
+
+.alegreya-22 {
+font-family:'Alegreya',serif;
+font-weight:300;
+font-size:22px;
 }

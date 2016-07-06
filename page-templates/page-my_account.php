@@ -17,9 +17,9 @@ if( get_theme_mod( "penci_left_sidebar_posts" ) ) { $sidebar_position = 'left-si
 			<?php endwhile; endif; ?>
 		</div>
 	</div>
-	<?php if ( is_user_logged_in() ) : ?>
+	<?php // if ( is_user_logged_in() ) : ?>
 		<div id="sidebar">
 			<?php if ( ! function_exists( 'dynamic_sidebar' ) || ! dynamic_sidebar( 'sidebar-my_account' ) ) ?>
 		</div>
-	<?php endif; ?>
+	<?php // endif; ?>
 <?php get_footer('basic');
