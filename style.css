@@ -6965,8 +6965,8 @@ h3.comment-reply-title {
 }
 #respond form#commentform,
 form.wpcf7-form {
-	margin-left: -14px;
-	margin-right: -14px;
+/*	margin-left: -14px;
+	margin-right: -14px; */
 }
 .mc4wp-form label {
 	text-align: left;
