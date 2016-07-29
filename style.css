@@ -11009,6 +11009,11 @@ div.ppt {
 	#close-sidebar-nav i {
 		display: inline-block;
 	}
+
+	.woocommerce-account .woocommerce-MyAccount-navigation,
+	.woocommerce-account .woocommerce-MyAccount-content {
+		width: 100%;
+	}
 }
 
 /* = Theme customization your go here
