@@ -1,16 +1,17 @@
 /*
  Theme Name:   soledad child
  Theme URI:    http://pencidesign.com/
- Description:  Soledad Child Theme - Made by PenciDesign
- Author:       Pencidesign
- Author URI:   http://pencidesign.com/
+ Description:  Child theme of Soledad (PenciDesign)
+ Author:       WPGuru4u
+ Author URI:   http://wpguru4u.com/
  Template:     soledad
  Text Domain:  soledad
 */
 /*
-green:b7c570;
-pink:b52261 (cta);
-purple:7e1743;
+color: mt/wc;
+primary:(green:b7c570)/(purple:5b316D);
+buttons, cta:(pink:b52261);
+secondary:(purple:7e1743)/(green:b7c570);
 light:c7c4c2;
 mid:8f8a86;
 dark:64605d;
