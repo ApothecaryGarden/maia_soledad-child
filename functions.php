@@ -140,3 +140,21 @@ add_action( 'after_setup_theme', 'remove_penci_customizer' );
 function remove_penci_customizer(){
     remove_action( 'wp_head', 'pencidesign_customizer_css' );
 }
+
+function is_mtoll() {
+    $options = get_option( 'maiatoll_options' );
+    $is = $options['where_am_i'];
+    if ( 'mt' == $is ) {
+        return true;
+    }
+    return false;
+}
+
+function is_wcamp() {
+    $options = get_option( 'maiatoll_options' );
+    $is = $options['where_am_i'];
+    if ( 'wc' == $is ) {
+        return true;
+    }
+    return false;
+}
