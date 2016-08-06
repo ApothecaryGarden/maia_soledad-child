@@ -111,7 +111,6 @@ p {
 }
 a {
 	text-decoration: none;
-	color: #6eb48c;
 	transition: color 0.3s;
 	-webkit-transition: color 0.3s;
 	-moz-transition: color 0.3s;
@@ -219,7 +218,6 @@ body.penci-body-boxed {
 	padding: 0 15px;
 	font-size: 12px;
 	color: #fff;
-	background: #6eb48c;
 	float: left;
 	text-transform: uppercase;
 	z-index: 10;
@@ -275,9 +273,6 @@ a.penci-topbar-post-title {
 	line-height: 1.5;
 	font-weight: bold;
 }
-a.penci-topbar-post-title:hover {
-	color: #6eb48c;
-}
 .loaded .penci-headline-posts .slick-prev,
 .loaded .penci-headline-posts .slick-next,
 .loaded a.penci-topbar-post-title {
@@ -309,9 +304,6 @@ a.penci-topbar-post-title:hover {
 }
 .penci-topbar-social a:first-child {
 	margin-left: 0;
-}
-.penci-topbar-social a:hover {
-	color: #6eb48c;
 }
 
 /* = Topbar Menu
@@ -347,10 +339,6 @@ div.penci-topbar-menu > ul > li a {
 	text-transform: uppercase;
 	line-height: 40px;
 	font-weight: 600;
-}
-ul.penci-topbar-menu > li a:hover,
-div.penci-topbar-menu > ul > li a:hover {
-	color: #6eb48c;
 }
 ul.penci-topbar-menu ul.sub-menu,
 div.penci-topbar-menu > ul ul.sub-menu {
@@ -497,7 +485,6 @@ div.penci-topbar-menu > ul ul.sub-menu li:first-child > a {
 	left: 50%;
 	height: 2px;
 	width: 0;
-	background: #6eb48c;
 }
 #navigation ul.menu > li > a:hover:before,
 #navigation .menu > ul > li > a:hover:before,
@@ -505,14 +492,6 @@ div.penci-topbar-menu > ul ul.sub-menu li:first-child > a {
 #navigation .menu > ul > li:hover > a:before{
 	left: 0;
 	width: 100%;
-}
-#navigation .menu li a:hover,
-#navigation .menu li:hover > a,
-#navigation .menu li.current-menu-item > a,
-#navigation .menu > li.current_page_item > a,
-#navigation .menu > li.current-menu-ancestor > a,
-#navigation .menu > li.current-menu-item > a {
-	color: #6eb48c;
 }
 #navigation .button-menu-mobile{
 	display: none;
@@ -525,9 +504,6 @@ div.penci-topbar-menu > ul ul.sub-menu li:first-child > a {
 	transition: color 0.3s;
 	-webkit-transition: color 0.3s;
 	-moz-transition: color 0.3s;
-}
-#navigation .button-menu-mobile:hover {
-
 }
 #mobile-logo {
 	display: none;
@@ -734,7 +710,6 @@ li.penci-mega-menu > ul.sub-menu {
 	border-top-color: #ECECEC;
 	border-bottom-color: #ECECEC;
 	background: #fff;
-	color: #6eb48c;
 	z-index: 10;
 	position: relative;
 }
@@ -782,7 +757,6 @@ li.penci-mega-menu > ul.sub-menu {
 }
 #navigation .penci-megamenu .penci-mega-thumbnail .mega-cat-name {
 	font-size: 10px;
-	background: #6eb48c;
 	line-height: 1;
 	text-transform: uppercase;
 	position: absolute;
@@ -932,7 +906,6 @@ li.penci-mega-menu > ul.sub-menu {
 	content: "";
 	width: 60px;
 	height: 1px;
-	background: #6eb48c;
 	position: absolute;
 	bottom: 0;
 	left: 50%;
@@ -949,10 +922,6 @@ li.penci-mega-menu > ul.sub-menu {
 .header-social.sidebar-nav-social a i {
 	color: #313131;
 }
-.header-social.sidebar-nav-social a i:hover {
-	color: #6eb48c;
-}
-
 #sidebar-nav .menu {
 	margin: 0;
 	list-style: none;
@@ -979,9 +948,6 @@ li.penci-mega-menu > ul.sub-menu {
 }
 #sidebar-nav .menu li.menu-item-has-children a {
 	padding-right: 17px;
-}
-#sidebar-nav .menu li a:hover {
-	color: #6eb48c;
 }
 #sidebar-nav .menu li a > i {
 	display: none;
@@ -1029,10 +995,7 @@ li.penci-mega-menu > ul.sub-menu {
 #sidebar-nav .menu .sub-menu li a .indicator {
 	padding: 8px 0 8px 5px;
 }
-#sidebar-nav .menu li a .indicator:hover,
-#sidebar-nav .menu .sub-menu li a .indicator:hover {
-	color: #6eb48c;
-}
+
 .fa-angle-double-up:before {
 	content: "\f102";
 }
@@ -1105,9 +1068,6 @@ li.penci-mega-menu > ul.sub-menu {
 	-o-transition: all 0.2s linear;
 	transition: all 0.2s linear;
 }
-#top-search > a:hover {
-
-}
 #top-search > a > i {
 	width: 20px;
 }
@@ -1128,7 +1088,6 @@ li.penci-mega-menu > ul.sub-menu {
 	-moz-border-radius: 50%;
 	top: 12px;
 	right: -4px;
-	background: #6eb48c;
 	color: #fff;
 	text-align: center;
 	white-space: nowrap;
@@ -1299,9 +1258,6 @@ li.penci-mega-menu > ul.sub-menu {
 	-ms-transition: all 0.2s linear;
 	-o-transition: all 0.2s linear;
 	transition: all 0.2s linear;
-}
-.header-social a:hover i{
-	color: #6eb48c;
 }
 
 /* = Featured Slider
@@ -1527,7 +1483,6 @@ li.penci-mega-menu > ul.sub-menu {
 }
 .featured-carousel .featured-cat a {
 	font-size: 12px;
-	color: #6eb48c;
 	text-transform: uppercase;
 	line-height: 1.2;
 	margin: 0 18px 0 0;
@@ -1543,7 +1498,6 @@ li.penci-mega-menu > ul.sub-menu {
 	position: relative;
 }
 .featured-carousel .featured-cat a:hover {
-	color: #6eb48c;
 	text-decoration: underline;
 }
 .featured-carousel .featured-cat a:after {
@@ -1577,7 +1531,6 @@ li.penci-mega-menu > ul.sub-menu {
 	text-align: center;
 	text-transform: uppercase;
 	color: #fff;
-	background: #6eb48c;
 	position: absolute;
 	z-index: 20;
 	top: -10px;
@@ -1594,11 +1547,9 @@ li.penci-mega-menu > ul.sub-menu {
 	border: 16px solid transparent;
 }
 .featured-carousel .feat-text .feat-time:before {
-	border-right-color: #6eb48c;
 	left: -32px;
 }
 .featured-carousel .feat-text .feat-time:after {
-	border-left-color: #6eb48c;
 	right: -32px;
 }
 .featured-carousel .featured-content .feat-text h3 {
@@ -1672,10 +1623,7 @@ li.penci-mega-menu > ul.sub-menu {
 .featured-carousel.style-7 .carousel-meta span.feat-author a {
 	color: #fff;
 }
-.featured-carousel.style-7 .carousel-meta span.feat-author a:hover,
-.featured-carousel .carousel-meta span a:hover {
-	color: #6eb48c;
-}
+
 .featured-carousel .carousel-meta > span:after {
 	content: "";
 	display: inline-block;
@@ -1758,7 +1706,6 @@ li.penci-mega-menu > ul.sub-menu {
 .penci-slider .penci-direction-nav .penci-next:hover,
 .penci-magazine2-prev:hover,
 .penci-magazine2-next:hover {
-	background: #6eb48c;
 	color: #fff;
 }
 
@@ -1900,16 +1847,6 @@ body .penci-slider ol.penci-control-nav li a {
 	display: inline-block;
 	font-size: 0;
 	vertical-align: top;
-}
-.penci-slider ol.penci-control-nav li a.penci-active,
-.penci-slider ol.penci-control-nav li a:hover {
-	background: #6eb48c;
-	border-color: #6eb48c;
-}
-
-/* Loading */
-.penci-slider.penci-loading {
-
 }
 
 /* Pencislider Elements */
@@ -2228,7 +2165,6 @@ p.penci-sub-heading-video {
 }
 .penci-magazine-slider .mag-cat a.penci-cat-name:hover {
 	text-decoration: none;
-	color: #6eb48c;
 }
 .penci-magazine-slider .mag-meta h3 {
 	line-height: 1.3;
@@ -2307,7 +2243,6 @@ p.penci-sub-heading-video {
 	opacity: 1;
 }
 .penci-magazine-slider .penci-direction-nav a:hover {
-	background: #6eb48c;
 	color: #fff;
 }
 .penci-magazine-slider .penci-direction-nav a:before {
@@ -2511,9 +2446,6 @@ p.penci-sub-heading-video {
 	font-size: 16px;
 	letter-spacing: 0;
 }
-.penci-mag2-carousel .cat.mag-cat {
-
-}
 .penci-mag2-carousel .cat > a.penci-cat-name {
 	color: #fff;
 }
@@ -2684,9 +2616,7 @@ ul.homepage-featured-boxes .penci-fea-in h4 span span:before{
 	position: absolute;
 	border: 1px solid #fff;
 }
-ul.homepage-featured-boxes .penci-fea-in:hover h4 span {
-	color: #6eb48c;
-}
+
 ul.homepage-featured-boxes .penci-fea-in.boxes-style-2 h4 {
 	background: #fff;
 	padding: 0 20px;
@@ -2822,7 +2752,6 @@ ul.homepage-featured-boxes .penci-fea-in.boxes-style-2 h4 span:before {
 	font-size: 35px;
 	padding: 0 20px;
 	display: inline-block;
-	color: #6eb48c;
 }
 .format-post-box .post-format-icon i.fa-quote-left:before {
 	content: '“';
@@ -2840,9 +2769,7 @@ ul.homepage-featured-boxes .penci-fea-in.boxes-style-2 h4 span:before {
 	font-style: italic;
 	font-size: 18px;
 }
-.format-post-box .dt-special a:hover {
-	color: #6eb48c;
-}
+
 .author-quote {
 	margin: 15px 0 5px;
 	text-align: center;
@@ -2854,7 +2781,6 @@ ul.homepage-featured-boxes .penci-fea-in.boxes-style-2 h4 span:before {
 	font-size: 12px;
 	padding: 0 11px;
 	position: relative;
-	color: #6eb48c;
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -2866,7 +2792,6 @@ ul.homepage-featured-boxes .penci-fea-in.boxes-style-2 h4 span:before {
 	height: 1px;
 	top: 50%;
 	left: 100%;
-	background: #6eb48c;
 }
 .author-quote span:before {
 	left: auto;
@@ -2906,7 +2831,6 @@ ul.homepage-featured-boxes .penci-fea-in.boxes-style-2 h4 span:before {
 	position: absolute;
 	width: 60px;
 	height: 1px;
-	background: #6eb48c;
 	display: block;
 	bottom: 0;
 	left: 50%;
@@ -2946,9 +2870,7 @@ ul.homepage-featured-boxes .penci-fea-in.boxes-style-2 h4 span:before {
 	color: #313131;
 	text-transform: capitalize;
 }
-.header-standard .author-post span a:hover {
-	color: #6eb48c;
-}
+
 .standard-content {
 	position: relative;
 }
@@ -2962,7 +2884,6 @@ ul.homepage-featured-boxes .penci-fea-in.boxes-style-2 h4 span:before {
 }
 .penci-more-link a.more-link {
 	letter-spacing: 1px;
-	color: #6eb48c;
 	text-transform: uppercase;
 	font-size: 12px;
 	display: inline-block;
@@ -3029,9 +2950,7 @@ ul.homepage-featured-boxes .penci-fea-in.boxes-style-2 h4 span:before {
 .penci-post-box-meta .penci-box-meta i.fa {
 	margin-right: 10px;
 }
-.penci-post-box-meta .penci-box-meta a:hover {
-	color: #6eb48c;
-}
+
 .penci-post-box-meta .penci-box-meta span:after {
 	content: "";
 	width: 1px;
@@ -3057,10 +2976,6 @@ ul.homepage-featured-boxes .penci-fea-in.boxes-style-2 h4 span:before {
 }
 .penci-post-box-meta .penci-post-share-box a:first-child {
 	margin-left: 0;
-}
-.penci-post-share-box a.liked,
-.penci-post-share-box a:hover {
-	color: #6eb48c;
 }
 .penci-post-share-box .dt-share {
 	position: absolute;
@@ -3229,7 +3144,6 @@ ul.penci-grid {
 }
 .penci-grid li .item .cat,
 .penci-masonry .item-masonry .cat {
-	color: #6eb48c;
 	display: block;
 	margin-bottom: 8px;
 }
@@ -3293,7 +3207,6 @@ ul.penci-grid {
 .grid-header-box:after {
 	width: 60px;
 	height: 1px;
-	background: #6eb48c;
 	margin-left: -30px;
 	position: absolute;
 	left: 50%;
@@ -3349,7 +3262,6 @@ ul.penci-grid {
 -----------------------------------------------------*/
 .cat > a.penci-cat-name {
 	font-size: 12px;
-	color: #6eb48c;
 	text-transform: uppercase;
 	line-height: 1.2;
 	margin: 0 18px 0 0;
@@ -3429,7 +3341,6 @@ ul.penci-grid {
 	content: "";
 	width: 60px;
 	height: 1px;
-	background: #6eb48c;
 	display: block;
 	bottom: 0;
 	left: 0;
@@ -3584,10 +3495,7 @@ ul.penci-grid {
 	color: #888888;
 	font-style: normal;
 }
-.grid-post-box-meta span a:hover,
-.grid-post-box-meta span a.comment-link:hover {
-	color: #6eb48c;
-}
+
 .list-boxed-post .grid-post-share-box .inner-grid-post-share-box {
 	background: #ffffff;
 }
@@ -3712,7 +3620,6 @@ ul.penci-grid {
 	color: #fff;
 }
 .overlay-header-box .cat > a.penci-cat-name:hover {
-	color: #6eb48c;
 	text-decoration: none;
 }
 .overlay-header-box .cat > a.penci-cat-name:after {
@@ -3730,9 +3637,7 @@ ul.penci-grid {
 	color: #fff;
 	font-style: italic;
 }
-.overlay-author a:hover {
-	color: #6eb48c;
-}
+
 .penci-overlay-over .overlay-border {
 	position: absolute;
 	top: 5px;
@@ -3777,9 +3682,6 @@ ul.penci-grid {
 .overlay-post-box-meta .overlay-share span,
 .overlay-post-box-meta .overlay-share a {
 	color: #888;
-}
-.overlay-post-box-meta .overlay-share a:hover {
-	color: #6eb48c;
 }
 .overlay-post-box-meta .overlay-share i {
 	color: inherit;
@@ -3944,10 +3846,6 @@ ul.penci-grid {
 .penci-grid li.typography-style .grid-post-box-meta span,
 .penci-grid li.typography-style .grid-post-box-meta span a {
 	color: #fff;
-}
-.penci-grid li.typography-style .grid-post-box-meta span a:hover,
-.penci-grid li.typography-style .item .main-typography h2 a:hover {
-	color: #6eb48c;
 }
 
 /* = Photography style 2
@@ -4266,7 +4164,6 @@ section.home-featured-cat {
 	left: 0;
 	width: 60px;
 	height: 1px;
-	background: #6eb48c;
 	display: block;
 }
 .home-featured-cat-content .magcat-detail h3 a {
@@ -4284,7 +4181,6 @@ section.home-featured-cat {
 	font-size: 18px;
 }
 .home-featured-cat-content .magcat-detail h3 a:hover {
-	color: #6eb48c;
 	text-decoration: none;
 }
 .home-featured-cat-content .magcat-detail .mag-meta {
@@ -4604,9 +4500,7 @@ article.post, article.portfolio {
 .post-box-meta-single a {
 	color: #313131;
 }
-.post-box-meta-single a:hover {
-	color: #6eb48c;
-}
+
 .post-box-meta-single > span:before {
 	content: "";
 	width: 1px;
@@ -4827,7 +4721,6 @@ body.rtl .slick-slider {
 	overflow: hidden;
 }
 .post-entry blockquote:before {
-	color: #6eb48c;
 	content: '“';
 	font-size: 64px;
 	font-weight: 900;
@@ -4843,7 +4736,6 @@ body.rtl .slick-slider {
 	font-size: 12px;
 	text-transform: uppercase;
 	margin-top: 7px;
-	color: #6eb48c;
 	font-style: normal;
 	font-weight: bold;
 	overflow: hidden;
@@ -4862,7 +4754,6 @@ body.rtl .slick-slider {
 	top: 50%;
 	width: 90px;
 	height: 1px;
-	background: #6eb48c;
 	left: 100%;
 	opacity: 0.8;
 }
@@ -4903,8 +4794,6 @@ body.rtl .slick-slider {
 .sticky.post .post-header {
 	border: 1px dashed #ddd;
 	padding: 20px 0;
-}
-.bypostauthor {
 }
 .post-entry table {
 	width: 100%;
@@ -4956,9 +4845,6 @@ body.rtl .slick-slider {
 	margin: 0 4px;
 	font-size: 14px;
 	color: #939393;
-}
-.gird-post-share a:hover {
-	color: #6eb48c;
 }
 .gird-post-share .gird-list-posts-share a:first-child {
 	margin-left: 0;
@@ -5024,9 +4910,7 @@ body.rtl .slick-slider {
 	line-height: 1.2;
 }
 .container-single .post-entry .post-tags a:hover {
-	background: #6eb48c;
 	color: #fff;
-	border-color: #6eb48c;
 	text-decoration: none;
 }
 .post-share {
@@ -5051,7 +4935,6 @@ body.rtl .slick-slider {
 	font-weight: bold;
 	font-style: italic;
 	font-size: 13px;
-	color: #6eb48c;
 	vertical-align: top;
 }
 .post-share .list-posts-share {
@@ -5068,10 +4951,6 @@ body.rtl .slick-slider {
 	display: inline-block;
 	vertical-align: top;
 	position: relative;
-}
-.post-share a:hover,
-.post-share a.liked {
-	color: #6eb48c;
 }
 .post-share a.penci-post-like {
 	margin-left: 5px;
@@ -5141,7 +5020,6 @@ body.rtl .slick-slider {
 article.page.type-page {
 	margin-bottom: 60px;
 }
-
 /*** Post author ***/
 .post-author {
 	margin: 0;
@@ -5174,9 +5052,6 @@ article.page.type-page {
 	margin: 0;
 	color: #313131;
 }
-.author-content h5 a:hover {
-	color: #6eb48c;
-}
 .author-content p {
 	margin-bottom: 16px;
 }
@@ -5184,9 +5059,6 @@ article.page.type-page {
 	font-size: 14px;
 	color: #313131;
 	margin-right: 10px;
-}
-.author-content .author-social:hover {
-	color: #6eb48c;
 }
 
 /*** Post Pagination ***/
@@ -5248,9 +5120,6 @@ article.page.type-page {
 .post-pagination a {
 	color: #313131;
 }
-.post-pagination a:hover {
-	color: #6eb48c;
-}
 .penci-post-nav-thumb {
 	display: inline-block;
 	float: left;
@@ -5297,7 +5166,6 @@ article.page.type-page {
 	position: absolute;
 	width: 60px;
 	height: 1px;
-	background: #6eb48c;
 	display: block;
 	top: 50%;
 	margin-top: -1px;
@@ -5426,9 +5294,6 @@ article.page.type-page {
 	color: #313131;
 	line-height: 1.4;
 }
-.item-related h3 a:hover {
-	color: #6eb48c;
-}
 .item-related span.date {
 	color: #888888;
 	display: inline-block;
@@ -5473,11 +5338,6 @@ ul.slick-dots li button {
 	-moz-transition: all 0.2s ease-in-out;
 	border: 2px solid #DEDEDE;
 }
-ul.slick-dots li button:hover,
-ul.slick-dots li.slick-active button {
-	background: #6eb48c;
-	border-color: #6eb48c;
-}
 
 /* = Page Under Construction
 -----------------------------------------------------*/
@@ -5518,7 +5378,6 @@ ul.slick-dots li.slick-active button {
 }
 .penci-countdown .countdown-amount {
 	font-size: 72px;
-	color: #6eb48c;
 	text-transform: uppercase;
 	font-weight: bold;
 	line-height: 1;
@@ -5609,7 +5468,6 @@ ul.slick-dots li.slick-active button {
 }
 .penci-pagination a:hover {
 	text-decoration: none;
-	color: #6eb48c;
 }
 .penci-pagination .newer,
 .penci-pagination .older {
@@ -5658,8 +5516,6 @@ ul.slick-dots li.slick-active button {
 }
 .penci-pagination ul.page-numbers li span.current {
 	color: #fff;
-	background: #6eb48c;
-	border-color: #6eb48c;
 	text-decoration: none;
 }
 .penci-pagination ul.page-numbers li a i {
@@ -5732,9 +5588,7 @@ ul.footer-socials li a i {
 	vertical-align: top;
 }
 ul.footer-socials li a:hover i {
-	background: #6eb48c;
 	color: #fff;
-	border-color: #6eb48c;
 }
 ul.footer-socials li a span {
 	text-transform: uppercase;
@@ -5749,9 +5603,6 @@ ul.footer-socials li a span {
 	-moz-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
-}
-ul.footer-socials li a:hover span {
-	color: #6eb48c;
 }
 
 /* = Footer Logo & copyright
@@ -5777,9 +5628,6 @@ ul.footer-socials li a:hover span {
 	color: #999;
 	line-height: 1.4;
 	font-style: italic;
-}
-#footer-copyright a {
-	color: #6eb48c;
 }
 #footer-copyright a:hover {
 	text-decoration: underline;
@@ -5817,9 +5665,6 @@ ul.footer-menu{
 }
 #footer-section .footer-menu li a{
 	color: #999;
-}
-#footer-section .footer-menu li a:hover {
-	color: #6eb48c;
 }
 .footer-menu ul.sub-menu {
 	display: none !important;
@@ -5959,7 +5804,6 @@ ul.footer-menu{
 	color: #313131;
 }
 .widget a:hover {
-	color: #6eb48c;
 	text-decoration: underline;
 }
 .widget.widget_archive label.screen-reader-text,
@@ -6090,8 +5934,6 @@ ul.footer-menu{
 }
 .widget .tagcloud a:hover {
 	color: #ffffff;
-	background: #6eb48c;
-	border-color: #6eb48c;
 	text-decoration: none;
 }
 
@@ -6217,7 +6059,6 @@ ul.footer-menu{
 	line-height: 1.4;
 }
 .widget ul.side-newsfeed li .side-item .side-item-text h4 a:hover {
-	color: #6eb48c;
 	text-decoration: none;
 }
 .widget ul.side-newsfeed li .side-item .side-item-text .side-item-meta {
@@ -6360,8 +6201,6 @@ ul.footer-menu{
 .widget-social a:hover i {
 	text-decoration: none;
 	color: #ffffff;
-	background: #6eb48c;
-	border-color: #6eb48c;
 }
 .widget-social a span {
 	display: none;
@@ -6389,9 +6228,6 @@ ul.footer-menu{
 	transition: color 0.3s;
 	-webkit-transition: color 0.3s;
 	-moz-transition: color 0.3s;
-}
-.widget-social.show-text a:hover span {
-	color: #6eb48c;
 }
 
 /* = Quote widget
@@ -6571,7 +6407,6 @@ ul.footer-menu{
 	background: #F5F5F5;
 }
 .mc4wp-form input[type="submit"]:hover {
-	background: #6eb48c;
 	color: #fff;
 }
 
@@ -6766,9 +6601,6 @@ ul.footer-menu{
 
 /* = Comments
 -----------------------------------------------------*/
-.post-comments {
-
-}
 .post-comments .post-title-box {
 	border-top: 1px solid #DEDEDE;
 	padding-top: 36px;
@@ -6845,9 +6677,6 @@ h3.comment-reply-title {
 	position: absolute;
 	top: 0;
 	right: 0;
-}
-.post-comments > .comments > .depth-1:last-child {
-
 }
 .post-comments span.reply a {
 	font-size: 11px;
@@ -7063,7 +6892,6 @@ label#captcha_code_label {
 .wpcf7 input[type="submit"]:hover,
 .widget_wysija input[type="submit"]:hover {
 	color: #fff;
-	background: #6eb48c;
 }
 .contact-form input[type=email], .contact-form input[type=text] {
 	max-width: 300px;
@@ -7134,7 +6962,6 @@ label#captcha_code_label {
 /*	max-width: 400px; */
 }
 .widget input[type="submit"]:hover{
-	background: #6eb48c;
 	color: #fff;
 }
 #respond input[type="checkbox"],
@@ -7164,7 +6991,6 @@ label#captcha_code_label {
 	content: "";
 	width: 90px;
 	height: 1px;
-	background: #6eb48c;
 	position: absolute;
 	bottom: 0;
 	left: 50%;
@@ -7197,7 +7023,6 @@ label#captcha_code_label {
 }
 .archive-box h1 {
 	display: inline-block;
-	color: #6eb48c;
 }
 .nothing {
 	margin-bottom: 60px;
@@ -7231,9 +7056,6 @@ label#captcha_code_label {
 	color: #888888;
 	font-weight: 500;
 }
-.container.penci-breadcrumb span a:hover {
-	color: #6eb48c;
-}
 .container.penci-breadcrumb i {
 	color: #888888;
 	font-size: 13px;
@@ -7261,7 +7083,6 @@ label#captcha_code_label {
 	left: 50%;
 	margin-left: -45px;
 	bottom: 0;
-	background: #6eb48c;
 }
 .penci-page-header:before {
 	width: 60px;
@@ -7575,7 +7396,6 @@ a img.aligncenter {
 	text-align: center;
 	margin-bottom: 12px;
 	font-size: 32px;
-	color: #6eb48c;
 	margin-top: -10px;
 }
 .penci-tweets-widget-content .tweet-text {
@@ -7588,7 +7408,6 @@ a img.aligncenter {
 	overflow: hidden;
 }
 .penci-tweets-widget-content .tweet-intents a {
-	color: #6eb48c;
 	font-size: 13px;
 	font-style: italic;
 }
@@ -7596,7 +7415,6 @@ a img.aligncenter {
 	content: "/";
 	margin: 0 5px;
 	font-size: 11px;
-	color: #6eb48c;
 }
 .penci-tweets-widget-content .tweet-intents span:last-child:after {
 	content: none;
@@ -7614,7 +7432,6 @@ a img.aligncenter {
 	top: 50%;
 	width: 90px;
 	height: 1px;
-	background: #6eb48c;
 	right: 100%;
 	margin-right: 15px;
 }
@@ -7643,11 +7460,6 @@ body .penci-slider.penci-tweets-slider ol.penci-control-nav li a {
 	box-shadow: none;
 	-webkit-box-shadow: none;
 	border: 1px solid #d4d4d4;
-}
-.penci-slider.penci-tweets-slider ol.penci-control-nav li a.penci-active,
-.penci-slider.penci-tweets-slider ol.penci-control-nav li a:hover {
-	border-color: #6eb48c;
-	background: #6eb48c;
 }
 
 /* = Contact form 7
@@ -7681,7 +7493,6 @@ div.wpcf7-response-output {
 	position: absolute;
 	width: 60px;
 	height: 1px;
-	background: #6eb48c;
 	bottom: 0;
 	left: 50%;
 	margin-left: -30px;
@@ -7720,7 +7531,6 @@ div.wpcf7-response-output {
 	height: 1px;
 	bottom: 0;
 	left: 0;
-	background: #6eb48c;
 	content: "";
 }
 
@@ -7728,7 +7538,6 @@ div.wpcf7-response-output {
 .penci-header-signup-form {
 	display: block;
 	padding: 20px 0;
-	background: #6eb48c;
 	margin: -50px 0 60px;
 }
 .penci-header-signup-form .mc4wp-form {
@@ -7833,7 +7642,6 @@ div.wpcf7-response-output {
 }
 .post-entry .penci-portfolio-filter ul li a:hover,
 .post-entry .penci-portfolio-filter ul li.active a {
-	color: #6eb48c;
 	text-decoration: none;
 }
 .penci-portfolio-wrap {
@@ -8031,7 +7839,6 @@ div.wpcf7-response-output {
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	background: #6eb48c;
 }
 .woocommerce .page-title:before {
 	width: 60px;
@@ -8056,7 +7863,6 @@ div.wpcf7-response-output {
 	line-height: 26px;
 	left: 10px;
 	top: 10px;
-	background: #6eb48c;
 	text-align: center;
 	padding: 0 10px;
 	font-weight: bold;
@@ -8108,7 +7914,6 @@ div.wpcf7-response-output {
 .woocommerce ul.products li.product .price ins,
 .woocommerce ul.products li.product .price {
 	font-size: 18px;
-	color: #6eb48c;
 	text-decoration: none;
 	font-weight: normal;
 }
@@ -8165,7 +7970,6 @@ div.wpcf7-response-output {
 .woocommerce a.button:hover,
 .woocommerce button.button:hover,
 .woocommerce input.button:hover {
-	background: #6eb48c;
 	color: #fff;
 }
 .woocommerce-pagination {
@@ -8221,8 +8025,6 @@ div.wpcf7-response-output {
 }
 .woocommerce nav.woocommerce-pagination ul li span.current {
 	color: #fff;
-	background: #6eb48c;
-	border-color: #6eb48c;
 	text-decoration: none;
 }
 .woocommerce #content div.product div.images,
@@ -8304,7 +8106,6 @@ a.woocommerce-review-link{
 	font-weight: normal;
 	text-decoration: none;
 	font-size: 18px;
-	color: #6eb48c;
 }
 .woocommerce div.product p.price del,
 .woocommerce div.product span.price del {
@@ -8326,7 +8127,6 @@ a.woocommerce-review-link{
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: #6eb48c;
 }
 .woocommerce div.product .woocommerce-tabs #tab-description #tab-description {
 	display: block !important;
@@ -8441,7 +8241,6 @@ a.woocommerce-review-link{
 }
 .woocommerce div.product .entry-summary div[itemprop="description"] blockquote:before,
 .woocommerce div.product .woocommerce-tabs #tab-description blockquote:before {
-	color: #6eb48c;
 	content: '“';
 	font-size: 64px;
 	font-weight: 900;
@@ -8459,7 +8258,6 @@ a.woocommerce-review-link{
 	font-size: 12px;
 	text-transform: uppercase;
 	margin-top: 7px;
-	color: #6eb48c;
 	font-style: normal;
 	font-family: "Lato", sans-serif;
 	font-weight: bold;
@@ -8481,7 +8279,6 @@ a.woocommerce-review-link{
 	top: 50%;
 	width: 90px;
 	height: 1px;
-	background: #6eb48c;
 	left: 100%;
 	opacity: 0.8;
 }
@@ -8558,7 +8355,6 @@ a.woocommerce-review-link{
 .woocommerce a.button.alt:hover,
 .woocommerce button.button.alt:hover,
 .woocommerce input.button.alt:hover {
-	background: #6eb48c;
 	color: #fff;
 }
 .woocommerce div.product form.cart, .woocommerce div.product p.cart {
@@ -8593,10 +8389,7 @@ a.woocommerce-review-link{
 .woocommerce div.product .product_meta > span a {
 	color: #888;
 }
-.woocommerce div.product .product_meta > span a:hover {
-	color: #6eb48c;
-}
-.woocommerce div.product .woocommerce-tabs ul.tabs {
+oocommerce div.product .woocommerce-tabs ul.tabs {
 	padding: 0 0 12px 0;
 	margin: 0 0 24px 0;
 	text-align: center;
@@ -8631,7 +8424,6 @@ a.woocommerce-review-link{
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active {
 	background: none;
 	border: none;
-	color: #6eb48c;
 }
 .woocommerce div.product .woocommerce-tabs .panel {
 	margin-bottom: 50px;
@@ -8817,7 +8609,6 @@ a.woocommerce-review-link{
 .woocommerce ul.cart_list li .amount,
 .woocommerce ul.product_list_widget li .amount {
 	font-size: 18px;
-	color: #6eb48c;
 	text-decoration: none;
 }
 .woocommerce ul.cart_list li del .amount,
@@ -8926,13 +8717,9 @@ a.woocommerce-review-link{
 	color: #313131;
 	text-decoration: none;
 }
-.woocommerce table.shop_table td.product-name a:hover {
-	color: #6eb48c;
-}
 .woocommerce table.shop_table td.product-price span,
 .woocommerce table.shop_table td.product-subtotal span{
 	font-size: 18px;
-	color: #6eb48c;
 }
 .woocommerce table.shop_table .quantity .qty {
 	line-height: 28px;
@@ -8980,7 +8767,6 @@ a.woocommerce-review-link{
 }
 .woocommerce-cart .cart-collaterals .cart_totals table td .amount {
 	font-size: 18px;
-	color: #6eb48c;
 }
 .woocommerce-cart .cart-collaterals .cart_totals .form-row {
 	padding: 0;
@@ -9002,7 +8788,6 @@ a.woocommerce-review-link{
 	padding: 8px;
 }
 .woocommerce .woocommerce-info:before {
-	color: #6eb48c;
 	top: 1em;
 }
 .woocommerce-cart .cart-collaterals .cart_totals table .shipping-calculator-form button[type="submit"] {
@@ -9045,9 +8830,6 @@ a.woocommerce-review-link{
 }
 p.lost_password {
 	margin-bottom: 0 !important;
-}
-.woocommerce form.checkout_coupon {
-
 }
 .woocommerce form.login .form-row {
 	margin-bottom: 20px;
@@ -10979,8 +10761,6 @@ div.ppt {
 	color: #fff;
 	font-size: 24px;
 }
-.overlay-author span p {
-}
 .wf-fp-wrapper input#nyp {
     color: #313131;
     font-weight: normal;
@@ -10994,11 +10774,7 @@ div.ppt {
 	text-align: center;
 	margin-bottom: 2em !important;
 }
-/*
-.wf-fp-block .button {
-	width: 100%;
-}
-*/
+
 .wf-fp-block .product-quantity {
 	float: left;
 	width: 100%;
@@ -11121,7 +10897,6 @@ ul#menu-wc-menu-1.menu {
     color: #fff;
     background: #b7c570;
 }
-
 ::selection {
     color: #fff;
     background: #b7c570;
@@ -11146,7 +10921,6 @@ ul#menu-wc-menu-1.menu {
 }
 
 /* From Customizer */
-
 h1, h2, h3, h4, h5, h6, h2.penci-heading-video, .penci-photo-2-effect figcaption h2, .headline-title, a.penci-topbar-post-title, #navigation .menu li a, #sidebar-nav .menu li a, .penci-slider .pencislider-container .pencislider-content .pencislider-title, .penci-slider .pencislider-container .pencislider-content .pencislider-button,
 .author-quote span, .penci-more-link a.more-link, .penci-post-share-box .dt-share, .post-share a .dt-share, .author-content h5, .post-pagination h5, .post-box-title, .penci-countdown .countdown-amount, .penci-countdown .countdown-period, .penci-pagination a, .penci-pagination .disable-url, ul.footer-socials li a span,
 .widget input[type="submit"], #sidebar .widget-title, #respond h3.comment-reply-title span, .widget-social.show-text a span, .footer-widget-wrapper .widget .widget-title,
@@ -11314,62 +11088,43 @@ ul.homepage-featured-boxes .penci-fea-in:hover h4 span { color: #7e1743; }
 .inner-item-portfolio:hover .penci-portfolio-thumbnail a:after { opacity: ; }
 ul.homepage-featured-boxes li .penci-fea-in:before, ul.homepage-featured-boxes li .penci-fea-in:after{ content: none; }
 ul.homepage-featured-boxes .penci-fea-in h4 span span{ background: rgba(255, 255, 255, 0.8); }
-
 ul.homepage-featured-boxes .penci-fea-in h4 span span:before{ content: none; }
-
 .penci-slider .pencislider-container .pencislider-content .pencislider-title, .penci-slider .pencislider-container .pencislider-content .pencislider-button{ text-transform: none; letter-spacing: 0; }
 
 @media only screen and (min-width: 1170px) {
-.penci-slider .pencislider-container .pencislider-content .pencislider-caption{ font-size: 44px; }
+	.penci-slider .pencislider-container .pencislider-content .pencislider-caption{ font-size: 44px; }
 }
-
 @media only screen and (min-width: 1170px) {
-.penci-slider .pencislider-container .pencislider-content .pencislider-title{ font-size: 30px; }
+	.penci-slider .pencislider-container .pencislider-content .pencislider-title{ font-size: 30px; }
 }
-
 @media only screen and (min-width: 1170px) {
-.penci-slider .pencislider-container .pencislider-content .pencislider-button{ font-size: 60px; }
+	.penci-slider .pencislider-container .pencislider-content .pencislider-button{ font-size: 60px; }
 }
-
 @media only screen and (min-width: 1170px) {
+	ul.homepage-featured-boxes li .penci-fea-in{ height: 415px; }
+}
 ul.homepage-featured-boxes li .penci-fea-in{ height: 415px; }
-}
-
-ul.homepage-featured-boxes li .penci-fea-in{ height: 415px; }
-
 .penci-slider .pencislider-container .pencislider-content .pencislider-button { font-family: 'Stalemate', cursive; }
-
 .featured-area.style-5{ background: none; }
 .featured-area.loaded-wait > div{ visibility: visible; }
 .penci-slider .penci-direction-nav .penci-prev, .penci-slider .penci-direction-nav .penci-next{ display: none; }
-
 .header-slogan .header-slogan-text{ font-size: 18px; }
-
 .penci-home-popular-post .item-related span.date{ display: none; }
-
-
 .penci-widget-slider-overlay{ opacity: 0; }
-
 .penci-widget-slider .penci-widget-slide-detail{ display: none; }
-
 .penci-page-header{ display: none; }
-
 #navigation ul.menu ul a, #navigation .menu ul ul a, #navigation .menu li a { font-size: 16px; }
-
 .post-entry blockquote, .post-entry blockquote p{ font-size: 20px; color: #8f8a86; }
-
 .post-entry h1, .post-entry h2, .post-entry h3, .post-entry h4, .post-entry h5, .post-entry h6 { color: #8f8a86; }
-
 .post-entry p{ color: #64605d; }
-
 .alegreya-28 {
-font-family:'Alegreya',serif;
-font-weight:300;
-font-size:28px;
+	font-family:'Alegreya',serif;
+	font-weight:300;
+	font-size:28px;
 }
 
 .alegreya-22 {
-font-family:'Alegreya',serif;
-font-weight:300;
-font-size:22px;
+	font-family:'Alegreya',serif;
+	font-weight:300;
+	font-size:22px;
 }
