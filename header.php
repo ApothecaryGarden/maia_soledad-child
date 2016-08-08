@@ -92,9 +92,7 @@ if ( 'lounge' === get_post_type( $post->ID )
 <div class="wrapper-boxed header-style-<?php echo esc_attr( $header_layout ); ?><?php if ( get_theme_mod( 'penci_body_boxed_layout' ) ) : echo ' enable-boxed'; endif;?>">
 
 <!-- Top Bar -->
-<?php if( get_theme_mod( 'penci_top_bar_show' ) ): ?>
-	<?php get_template_part( 'inc/modules/topbar' ); ?>
-<?php endif; ?>
+<?php get_template_part( 'inc/modules/topbar' ); ?>
 
 <header id="header" class="header-<?php echo esc_attr( $header_layout ); ?><?php if( ( ( ! is_home() || ! is_front_page() ) && ! get_theme_mod( 'penci_featured_slider_all_page' ) ) || ( ( is_home() || is_front_page() ) && ! get_theme_mod( 'penci_featured_slider' ) ) ): ?> has-bottom-line<?php endif;?>"><!-- #header -->
 	<div class="inner-header">
@@ -219,13 +217,23 @@ if( is_home() || is_front_page() || get_theme_mod( 'penci_featured_slider_all_pa
 	}
 }
 */
-if( is_home() || is_front_page() || get_theme_mod( 'penci_featured_slider_all_page' ) ) : ?>
-<div class="home-jumbo">
-	<div class="jumbo-content">
-	<h2 class="jumbo-title"><a href="//maiatoll.com/take-the-quiz/">
-	<span>The world is noisy. </span>Your inner-voice is not.</a></h2>
-	<p class="jumbo-caption">Listen. Learn. Declare self-sovereignty.</p>
-	<div class="jumbo-button"><a class="pencislider-button" href="//maiatoll.com/take-the-quiz/">get started now! &gt;</a></div>
-	</div>
-</div>
-<?php endif;
+if( is_home() || is_front_page() ) : ?>
+	<?php if( is_mtoll() ) : ?>
+		<div class="home-jumbo">
+			<div class="jumbo-content">
+			<h2 class="jumbo-title"><a href="//maiatoll.com/take-the-quiz/">
+			<span>The world is noisy. </span>Your inner-voice is not.</a></h2>
+			<p class="jumbo-caption">Listen. Learn.</p><p class="jumbo-caption">Declare self-sovereignty.</p>
+			<div class="jumbo-button"><a class="pencislider-button" href="//maiatoll.com/take-the-quiz/">get started now! &gt;</a></div>
+			</div>
+		</div>
+	<?php else : ?>
+		<?php $bkg = get_stylesheet_directory_uri() . '/images/witch-camp-home-header.jpg'; ?>
+		<?php $img = get_stylesheet_directory_uri() . '/images/witch-camp-home-header-logo.gif'; ?>
+		<div class="home-jumbo-wcamp" style="background:url(<?php echo $bkg ?>)">
+			<div class="home-jumbo-logo-wcamp">
+				<img src="<?php echo $img ?>">
+			</div>
+		</div>
+	<?php endif;
+endif;

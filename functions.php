@@ -73,7 +73,6 @@ function oak_childtheme_setup() {
 
 }
 
-
 /**
  * Sensei Support
  */
@@ -140,7 +139,24 @@ add_action( 'after_setup_theme', 'remove_penci_customizer' );
 function remove_penci_customizer(){
     remove_action( 'wp_head', 'pencidesign_customizer_css' );
 }
-
+add_action( 'wp_enqueue_scripts', 'wpguru4u_google_fonts' );
+function wpguru4u_google_fonts() {
+    $query_args = array(
+        'family' => 'Stalemate:400|Alegreya:400|Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic',
+    //  'family' => 'Stalemate:400|Niconne:400|Mrs+Saint+Delafield:400|Allura:400|Qwigley:400|Alex+Brush:400|Alegreya:400|Lustria:400',
+        'subset' => 'latin,latin-ext',
+    );
+    wp_register_style( 'maia_fonts', add_query_arg( $query_args, 'https://fonts.googleapis.com/css' ), array(), null );
+    wp_enqueue_style( 'maia_fonts' );
+}
+add_action( 'wp_enqueue_scripts', 'oakwood_custom_css' );
+function oakwood_custom_css() {
+    if ( is_mtoll() ) {
+        wp_enqueue_style( 'maia_custom_mt', get_stylesheet_directory_uri() . '/css/style-mt.css', array('penci_style'), '2.6.1' );
+    } else {
+        wp_enqueue_style( 'maia_custom_wc', get_stylesheet_directory_uri() . '/css/style-wc.css', array('penci_style'), '2.6.1' );
+    }
+}
 function is_mtoll() {
     $options = get_option( 'maiatoll_options' );
     $is = $options['where_am_i'];
@@ -158,3 +174,4 @@ function is_wcamp() {
     }
     return false;
 }
+

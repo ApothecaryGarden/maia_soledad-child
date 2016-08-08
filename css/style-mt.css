@@ -7,6 +7,14 @@ mid:8f8a86;
 dark:64605d;
  */
 /* From Customizer */
+.penci-top-bar {
+	height: 40px;
+	background: #b7c570;
+}
+.flower-oracle-home-right .overlay-header-box {
+    background: #b7c570;
+    background: rgba(183,197,112,0.90);
+}
 h1, h2, h3, h4, h5, h6, h2.penci-heading-video, .penci-photo-2-effect figcaption h2, .headline-title, a.penci-topbar-post-title, #navigation .menu li a, #sidebar-nav .menu li a, .penci-slider .pencislider-container .pencislider-content .pencislider-title, .penci-slider .pencislider-container .pencislider-content .pencislider-button,
 .author-quote span, .penci-more-link a.more-link, .penci-post-share-box .dt-share, .post-share a .dt-share, .author-content h5, .post-pagination h5, .post-box-title, .penci-countdown .countdown-amount, .penci-countdown .countdown-period, .penci-pagination a, .penci-pagination .disable-url, ul.footer-socials li a span,
 .widget input[type="submit"], #sidebar .widget-title, #respond h3.comment-reply-title span, .widget-social.show-text a span, .footer-widget-wrapper .widget .widget-title,
@@ -203,3 +211,12 @@ ul.homepage-featured-boxes li .penci-fea-in{ height: 415px; }
 .post-entry blockquote, .post-entry blockquote p{ font-size: 20px; color: #8f8a86; }
 .post-entry h1, .post-entry h2, .post-entry h3, .post-entry h4, .post-entry h5, .post-entry h6 { color: #8f8a86; }
 .post-entry p{ color: #64605d; }
+
+::-moz-selection {
+    color: #fff;
+    background: #b7c570;
+}
+::selection {
+    color: #fff;
+    background: #b7c570;
+}

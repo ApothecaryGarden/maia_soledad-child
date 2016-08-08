@@ -50,6 +50,8 @@ if ( 'lounge' === get_post_type( $post->ID )
 ?>
 <!-- .wrapper-boxed -->
 <div class="wrapper-boxed header-style-<?php echo esc_attr( $header_layout ); ?><?php if ( get_theme_mod( 'penci_body_boxed_layout' ) ) : echo ' enable-boxed'; endif;?>">
+<!-- Top Bar -->
+<?php get_template_part( 'inc/modules/topbar' ); ?>
 <header id="header" class="header-<?php echo esc_attr( $header_layout ); ?><?php if( ( ( ! is_home() || ! is_front_page() ) && ! get_theme_mod( 'penci_featured_slider_all_page' ) ) || ( ( is_home() || is_front_page() ) && ! get_theme_mod( 'penci_featured_slider' ) ) ): ?> has-bottom-line<?php endif;?>"><!-- #header -->
 	<div class="inner-header">
 		<div class="container<?php if( !$wcl): if( $header_layout == 'header-3' ): echo ' align-left-logo'; if( get_theme_mod( 'penci_header_3_banner' ) || get_theme_mod( 'penci_header_3_adsense' ) ): echo ' has-banner'; endif; endif; endif; ?>">
