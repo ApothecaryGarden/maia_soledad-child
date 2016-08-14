@@ -97,6 +97,9 @@ function oakwood_sensei_support() {
 add_filter( 'body_class', 'mtoll_witchcamp_body_class' );
 function mtoll_witchcamp_body_class( $classes ) {
     global $post;
+    if ( ! is_object( $post ) ) {
+        return $classes;
+    }
     if ( 'lounge' === get_post_type( $post->ID )
         || 'premium' === get_post_type( $post->ID )
         || $post->ID == maiatoll_get_option( 'maiatoll_hub_page' ) ) {
@@ -175,3 +178,4 @@ function is_wcamp() {
     return false;
 }
 
+remove_filter( 'lostpassword_url', 'wc_lostpassword_url', 10, 1 );
