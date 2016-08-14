@@ -204,7 +204,6 @@ body.penci-body-boxed {
 /* = Top Bar
 -----------------------------------------------------*/
 .penci-top-bar {
-	height: 40px;
 	background: #b7c570;
 }
 .penci-top-bar .container {
@@ -8563,7 +8562,7 @@ div.ppt {
 	text-align: center;
 }
 .home-jumbo {
-    background: url('https://maiatoll.com/wp-content/uploads/2016/06/maia_header.jpg');
+    background: url('//maiatoll.com/wp-content/uploads/2016/06/maia_header.jpg');
     background-size: cover;
     height: 580px;
     background-repeat: no-repeat;
