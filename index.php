@@ -28,10 +28,11 @@ if( get_theme_mod( "penci_left_sidebar_home" ) ) { $sidebar_position = 'left-sid
 if ( ! isset( $layout_this ) || empty( $layout_this ) ): $layout_this = 'standard'; endif;
 $class_layout = '';
 if( $layout_this == 'classic' ): $class_layout = ' classic-layout'; endif;
-?>
+if ( is_mtoll() ) : ?>
 	<div class="container">
 		<?php get_template_part( 'inc/modules/flower_oracle' ); ?>
 	</div>
+<?php endif; ?>
 	<div class="clear-footer"></div>
 	<div class="container<?php echo esc_attr( $class_layout ); if ( get_theme_mod( 'penci_sidebar_home' ) ) : ?> penci_sidebar <?php echo esc_attr( $sidebar_position ); ?><?php endif; ?>">
 		<div id="main" class="penci-layout-boxed-1">
