@@ -105,9 +105,11 @@ if ( is_object( $post ) ) {
 
 			<div id="logo">
 				<?php if ( is_home() || is_front_page() ) : ?>
-					<h1>
-						<a href="<?php echo esc_url( home_url('/') ); ?>"><img src="<?php echo esc_url( get_theme_mod( 'penci_logo' ) ); ?>" alt="<?php bloginfo( 'name' ); ?>" /></a>
-					</h1>
+					<?php if ( is_mtoll() ) : ?>
+						<h1>
+							<a href="<?php echo esc_url( home_url('/') ); ?>"><img src="<?php echo esc_url( get_theme_mod( 'penci_logo' ) ); ?>" alt="<?php bloginfo( 'name' ); ?>" /></a>
+						</h1>
+					<?php endif; ?>
 				<?php else : ?>
 					<h2>
 					<?php if ( $wcl ) : ?>
