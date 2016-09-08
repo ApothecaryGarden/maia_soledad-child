@@ -321,8 +321,7 @@ div.penci-topbar-menu > ul li {
 ul.penci-topbar-menu > li,
 div.penci-topbar-menu > ul > li {
 	display: inline-block;
-	float: left;
-	margin-right: 25px;
+	margin: 0 12px;
 }
 ul.penci-topbar-menu > li:last-child,
 div.penci-topbar-menu > ul > li:last-child {
