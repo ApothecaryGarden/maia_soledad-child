@@ -40,18 +40,13 @@ if ( ! isset( $header_layout ) || empty( $header_layout ) ) {
 	$header_layout = 'header-1';
 }
 global $post;
-if ( is_object( $post ) ) {
-	if ( 'lounge' === get_post_type( $post->ID )
-		|| 'premium' === get_post_type( $post->ID )
-		|| $post->ID == maiatoll_get_option( 'maiatoll_hub_page' ) ) {
-		$wcl = true;
-	} else {
-		$wcl = false;
-	}
+if ( 'lounge' === get_post_type( $post->ID )
+	|| 'premium' === get_post_type( $post->ID )
+	|| $post->ID == maiatoll_get_option( 'maiatoll_hub_page' ) ) {
+	$wcl = true;
 } else {
 	$wcl = false;
 }
-
 ?>
 <a id="close-sidebar-nav" class="<?php echo esc_attr( $header_layout ); ?>"><i class="fa fa-close"></i></a>
 
@@ -105,11 +100,9 @@ if ( is_object( $post ) ) {
 
 			<div id="logo">
 				<?php if ( is_home() || is_front_page() ) : ?>
-					<?php if ( is_mtoll() ) : ?>
-						<h1>
-							<a href="<?php echo esc_url( home_url('/') ); ?>"><img src="<?php echo esc_url( get_theme_mod( 'penci_logo' ) ); ?>" alt="<?php bloginfo( 'name' ); ?>" /></a>
-						</h1>
-					<?php endif; ?>
+					<h1>
+						<a href="<?php echo esc_url( home_url('/') ); ?>"><img src="<?php echo esc_url( get_theme_mod( 'penci_logo' ) ); ?>" alt="<?php bloginfo( 'name' ); ?>" /></a>
+					</h1>
 				<?php else : ?>
 					<h2>
 					<?php if ( $wcl ) : ?>
@@ -232,6 +225,14 @@ if( is_home() || is_front_page() ) : ?>
 			<span>The world is noisy. </span>Your inner-voice is not.</a></h2>
 			<p class="jumbo-caption">Listen. Learn.</p><p class="jumbo-caption">Declare self-sovereignty.</p>
 			<div class="jumbo-button"><a class="pencislider-button" href="//maiatoll.com/take-the-quiz/">get started now! &gt;</a></div>
+			</div>
+		</div>
+	<?php else : ?>
+		<?php $bkg = get_stylesheet_directory_uri() . '/images/witch-camp-home-header.jpg'; ?>
+		<?php $img = get_stylesheet_directory_uri() . '/images/witch-camp-home-header-logo.gif'; ?>
+		<div class="home-jumbo-wcamp" style="background:url(<?php echo $bkg ?>)">
+			<div class="home-jumbo-logo-wcamp">
+				<img src="<?php echo $img ?>">
 			</div>
 		</div>
 	<?php endif;

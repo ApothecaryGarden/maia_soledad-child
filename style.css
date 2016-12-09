@@ -321,7 +321,8 @@ div.penci-topbar-menu > ul li {
 ul.penci-topbar-menu > li,
 div.penci-topbar-menu > ul > li {
 	display: inline-block;
-	margin: 0 12px;
+	float: left;
+	margin-right: 25px;
 }
 ul.penci-topbar-menu > li:last-child,
 div.penci-topbar-menu > ul > li:last-child {
@@ -10468,7 +10469,7 @@ div.ppt {
     width: 100%;
     margin: 10px auto 60px;
 }
-.penci-topbar-menu .menu-item a {
+.penci-topbar-menu .menu-item:last-child a {
     font-weight: bold;
 }
 @media only screen and (min-width: 961px) and (max-width: 1169px) {
